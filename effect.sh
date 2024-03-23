@@ -463,13 +463,13 @@
 
   # wait
 
-nohup python -u evaluate_onesvm_Sdatasets.py -flag 1 -nu 0.1 -gama 0.1 -gpu 0 > logs/S1.log &
-# nohup python -u evaluate_onesvm_Sdatasets.py -flag 2 -nu 0.1 -gama 0.15 -gpu 3 > logs/S2.log &
-# nohup python -u evaluate_onesvm_Sdatasets.py -flag 3 -nu 0.1 -gama 0.2 -gpu 4 > logs/S3.log &
-# nohup python -u evaluate_onesvm_Sdatasets.py -flag 4 -nu 0.1 -gama 0.15 -gpu 5 > logs/S4.log &
+nohup python -u evaluate_onesvm_Sdatasets.py -flag 1 -nu 0.1 -gama 0.1 -gpu 2 > logs/S1.log &
+nohup python -u evaluate_onesvm_Sdatasets.py -flag 2 -nu 0.1 -gama 0.15 -gpu 3 > logs/S2.log &
+nohup python -u evaluate_onesvm_Sdatasets.py -flag 3 -nu 0.1 -gama 0.2 -gpu 4 > logs/S3.log &
+nohup python -u evaluate_onesvm_Sdatasets.py -flag 4 -nu 0.1 -gama 0.15 -gpu 5 > logs/S4.log &
 wait
 
-# nohup python -u evaluate_onesvm_12_ground_modify.py -nu 0.08 -gama 0.3 -gpu 2 > logs/M12.log &
-# nohup python -u evaluate_onesvm_34_ground_modify.py -nu 0.08 -gama 0.3 -gpu 3 > logs/M34.log &
-# nohup python -u evaluate_onesvm_56_ground_modify.py -nu 0.08 -gama 0.3 -gpu 4 > logs/M56.log &
-# wait
+nohup python -u evaluate_onesvm_12_ground_modify.py -nu 0.08 -gama 0.3 -gpu 2 > logs/M12.log &
+nohup python -u evaluate_onesvm_34_ground_modify.py -nu 0.08 -gama 0.3 -gpu 3 > logs/M34.log &
+nohup python -u evaluate_onesvm_56_ground_modify.py -nu 0.08 -gama 0.3 -gpu 4 > logs/M56.log &
+wait

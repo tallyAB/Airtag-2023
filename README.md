@@ -1,29 +1,31 @@
 # Airtag
+Fork of [AirTag](https://github.com/dhl123/Airtag-2023) for reproduction and additional experiments
 
-## Requirements
-
-- Tensorflow 1.11.0
-- numpy 1.19.5
-
-Other related packages may be required, please install them accordingly. For graph related packages, please refer to [ATLAS](https://github.com/purseclab/ATLAS).
-
-
-## Data, models, and embedding vectors.
-Download from [Drive](https://drive.google.com/drive/folders/1u5VNiYvFZaxLezK7uEsPRrIR5dtdfkHC?usp=sharing). 
+## Setup
+- Please use the [Dockerfile](./Dockerfile) provided. Run an interactive session with runtime=nvidia for gpu pass-through to container.
+**Note**: Requires [nvidia-docker](https://hub.docker.com/r/tensorflow/tensorflow) to be setup 
+- Download data, models, and embedding vectors from [Drive](https://drive.google.com/drive/u/1/folders/1XAvQnCfo1J-OPXdkHYTrKWC3X_XJivS1).
+- Unpack all directories and move them to the /root/AirTag
 
 ## Run
+Change working directory
 ```
-bash effect.sh
+cd /root/AirTag/ablation_scripts
 ```
-## Behavior
-
-The datasets contain the following behaviors:
-
-- System behaviors of a Windows 7 system, including daemon processes.
-- File system operations such as opening, reading, writing, and deleting existing files.
-- Operations on various applications.
-- Operations involving the Flash.
-- Browser activities, including visiting different webpages such as Amazon, Wikipedia, Google searches, and downloaded some files.
-
-## Contact
-hailun.ding@rutgers.edu
+Reproduce Paper Results
+```
+bash effect_org.sh
+```
+Ablation 1: ATLAS Event logs only
+```
+bash effect_ablation_one.sh
+```
+Ablation 2: ATLAS Event + DNS logs
+```
+bash effect_ablation_two.sh
+```
+AirTag on SIGL data
+```
+bash effect_sigl.sh
+```
+Results in [logs](./logs/)
