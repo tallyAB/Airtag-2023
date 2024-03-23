@@ -22,9 +22,9 @@ else:
     ablOne = False
     
 if ablOne:
-    suffix = 'AblationOne'
+    suffix = 'AblationOne/'
 else:
-    suffix = 'AblationTwo'
+    suffix = 'AblationTwo/'
 
 starting_path = '/root/AirTag/training_data/'
 pp_files = ['training_preprocessed_logs_S1-CVE-2015-5122_windows', 'training_preprocessed_logs_S2-CVE-2015-3105_windows', 'training_preprocessed_logs_S3-CVE-2017-11882_windows', 'training_preprocessed_logs_S4-CVE-2017-0199_windows_py']

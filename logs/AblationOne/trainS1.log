@@ -1,0 +1,74 @@
+INFO:tensorflow:*** Input Files ***
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f935f6c0a60>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_save_checkpoints_steps': 1000, '_eval_distribute': None, '_experimental_distribute': None, '_save_summary_steps': 100, '_protocol': None, '_log_step_count_steps': None, '_num_worker_replicas': 1, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f932eca8f60>, '_service': None, '_task_id': 0, '_cluster': None, '_train_distribute': None, '_is_chief': True, '_task_type': 'worker', '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_tf_random_seed': None, '_keep_checkpoint_max': 5, '_device_fn': None, '_model_dir': '../models/AblationOne/S1', '_master': '', '_save_checkpoints_secs': None, '_num_ps_replicas': 0, '_keep_checkpoint_every_n_hours': 10000, '_evaluation_master': '', '_global_id_in_cluster': 0, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None)}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+WARNING:tensorflow:eval_on_tpu ignored because use_tpu is False.
+INFO:tensorflow:***** Running training *****
+INFO:tensorflow:  Batch size = 4
+INFO:tensorflow:Error recorded from training_loop: Tensor conversion requested dtype string for Tensor with dtype float32: 'Tensor("arg0:0", shape=(), dtype=float32, device=/device:CPU:0)'
+INFO:tensorflow:training_loop marked as finished
+WARNING:tensorflow:Reraising captured error
+Traceback (most recent call last):
+  File "../run_pretraining.py", line 499, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "../run_pretraining.py", line 474, in main
+    estimator.train(input_fn=train_input_fn, max_steps=FLAGS.num_train_steps)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/contrib/tpu/python/tpu/tpu_estimator.py", line 2400, in train
+    rendezvous.raise_errors()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/contrib/tpu/python/tpu/error_handling.py", line 128, in raise_errors
+    six.reraise(typ, value, traceback)
+  File "/usr/local/lib/python3.5/dist-packages/six.py", line 693, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/contrib/tpu/python/tpu/tpu_estimator.py", line 2394, in train
+    saving_listeners=saving_listeners
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/estimator/estimator.py", line 356, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/estimator/estimator.py", line 1181, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/estimator/estimator.py", line 1208, in _train_model_default
+    input_fn, model_fn_lib.ModeKeys.TRAIN))
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/estimator/estimator.py", line 1049, in _get_features_and_labels_from_input_fn
+    self._call_input_fn(input_fn, mode))
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/contrib/tpu/python/tpu/tpu_estimator.py", line 2354, in _call_input_fn
+    return input_fn(**kwargs)
+  File "../run_pretraining.py", line 377, in input_fn
+    cycle_length=cycle_length))
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/data/ops/dataset_ops.py", line 1128, in apply
+    dataset = transformation_func(self)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/contrib/data/python/ops/interleave_ops.py", line 87, in _apply_fn
+    buffer_output_elements, prefetch_input_elements)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/data/ops/readers.py", line 128, in __init__
+    cycle_length, block_length)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/data/ops/dataset_ops.py", line 2312, in __init__
+    super(InterleaveDataset, self).__init__(input_dataset, map_func)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/data/ops/dataset_ops.py", line 2275, in __init__
+    experimental_nested_dataset_support=True)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/data/ops/dataset_ops.py", line 1473, in __init__
+    self._function.add_to_graph(ops.get_default_graph())
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/function.py", line 479, in add_to_graph
+    self._create_definition_if_needed()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/function.py", line 335, in _create_definition_if_needed
+    self._create_definition_if_needed_impl()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/function.py", line 344, in _create_definition_if_needed_impl
+    self._capture_by_value, self._caller_device)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/function.py", line 865, in func_graph_from_py_func
+    outputs = func(*func_graph.inputs)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/data/ops/dataset_ops.py", line 1411, in tf_data_structured_function_wrapper
+    ret = func(*nested_args)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/data/ops/readers.py", line 194, in __init__
+    filenames = ops.convert_to_tensor(filenames, dtype=dtypes.string)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 1048, in convert_to_tensor
+    as_ref=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 1144, in internal_convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 981, in _TensorTensorConversionFunction
+    (dtype.name, t.dtype.name, str(t)))
+ValueError: Tensor conversion requested dtype string for Tensor with dtype float32: 'Tensor("arg0:0", shape=(), dtype=float32, device=/device:CPU:0)'

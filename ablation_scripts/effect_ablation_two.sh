@@ -269,7 +269,7 @@ wait
 
 wait
 
-nohup python -u evaluate_onesvm_Sdatasets_ablation_custom.py -flag 1 -nu 0.1 -gama 0.1 -gpu 0 -suffix AblationTwo > ../logs/AblationTwo/S1.log & wait
-nohup python -u evaluate_onesvm_Sdatasets_ablation_custom.py -flag 2 -nu 0.1 -gama 0.15 -gpu 0 -suffix AblationTwo > ../logs/AblationTwo/S2.log & wait
-nohup python -u evaluate_onesvm_Sdatasets_ablation_custom.py -flag 3 -nu 0.1 -gama 0.2 -gpu 0 -suffix AblationTwo > ../logs/AblationTwo/S3.log & wait
-nohup python -u evaluate_onesvm_Sdatasets_ablation_custom.py -flag 4 -nu 0.1 -gama 0.15 -gpu 0 -suffix AblationTwo > ../logs/AblationTwo/S4.log & wait
+nohup python -u evaluate_onesvm_Sdatasets_custom.py -flag 1 -nu 0.1 -gama 0.1 -gpu 0 -suffix AblationTwo > ../logs/AblationTwo/S1.log & wait
+nohup python -u evaluate_onesvm_Sdatasets_custom.py -flag 2 -nu 0.1 -gama 0.15 -gpu 0 -suffix AblationTwo > ../logs/AblationTwo/S2.log & wait
+nohup python -u evaluate_onesvm_Sdatasets_custom.py -flag 3 -nu 0.1 -gama 0.2 -gpu 0 -suffix AblationTwo > ../logs/AblationTwo/S3.log & wait
+nohup python -u evaluate_onesvm_Sdatasets_custom.py -flag 4 -nu 0.1 -gama 0.15 -gpu 0 -suffix AblationTwo > ../logs/AblationTwo/S4.log & wait

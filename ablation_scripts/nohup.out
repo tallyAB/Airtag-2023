@@ -1,745 +1,86 @@
-cp: target ' ' is not a directory
-INFO:tensorflow:*** Reading from input files ***
-INFO:tensorflow:  ../training_data/Original/S2_train
-INFO:tensorflow:*** Reading from input files ***
-INFO:tensorflow:*** Reading from input files ***
-INFO:tensorflow:  ../training_data/Original/S3_train
-INFO:tensorflow:*** Reading from input files ***
-INFO:tensorflow:  ../training_data/Original/S4_train
-INFO:tensorflow:  ../training_data/Original/S1_train
-cp: cannot stat '../ground_truth/S1_number.npy': No such file or directory
-cp: cannot stat '../ground_truth/S2_number.npy': No such file or directory
-cp: cannot stat '../ground_truth/S3_number.npy': No such file or directory
-cp: cannot stat '../ground_truth/S4_number.npy': No such file or directory
-INFO:tensorflow:*** Writing to output files ***
-INFO:tensorflow:  ../training_data/Original/S2.tfrecord
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] [MASK] windows [MASK] svchost exe 11 file read control synchronize readdata or listdirectory readea readattributes [SEP] c windows system32 svchost exe 11 file readdata load listdirectory [MASK] windows [MASK] drivers [SEP]
-INFO:tensorflow:input_ids: 2219 2868 645 2868 2190 1412 271 2064 4868 2127 2864 1360 4451 4718 4953 5973 3512 5655 645 1268 2190 1412 271 2064 1360 4318 4718 2868 645 2868 2464 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 1 3 25 27 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5655 1268 4451 5655 1268 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 3904 [MASK] c programfiles microsoftoffice office14 winword exe 11 file readattributes c windows [MASK] timesbd [SEP] 2 [MASK] [UNK] [UNK] [UNK] [UNK] [MASK] [UNK] [UNK] firefox [UNK] [UNK] [UNK] 52 [SEP]
-INFO:tensorflow:input_ids: 2219 4117 2868 5655 2467 5320 1893 2301 1412 271 2064 5973 5655 645 2868 4954 3512 1603 2868 973 973 973 973 2868 973 973 2030 973 973 973 3954 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 10 14 18 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 4311 2064 3471 973 973 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 2004 3776 device mup 192 168 223 3 [MASK] msf exe 13 [UNK] [MASK] [SEP] 3 share [MASK] [MASK] 11 [MASK] synchronize readdata or listdirectory execute traverse c windows [SEP]
-INFO:tensorflow:input_ids: 2219 1603 1095 5915 3084 4342 3348 1382 4644 4147 2868 2857 1412 2973 973 2868 3512 4147 3556 2868 2868 271 2868 2864 1360 4451 4718 3993 2317 5655 645 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 10 15 19 20 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 3556 973 2857 1412 2064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] vmtoolsd exe 13 [UNK] 2 0 1 172 217 6 99 443 [MASK] 168 223 [SEP] 0 1 216 [MASK] [MASK] 229 443 192 168 223 [MASK] 49330 9 [UNK] [SEP]
-INFO:tensorflow:input_ids: 2219 628 1412 2973 973 1603 5232 4036 1001 766 1661 518 3119 2868 1382 4644 3512 5232 4036 4742 2868 2868 1327 3119 3348 1382 4644 2868 1248 2670 973 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 11 13 20 21 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 518 3348 4128 4742 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 2396 [MASK] c windows system32 mmc [MASK] [MASK] [UNK] [SEP] 2 2396 1764 c windows system32 mmc exe 11 file synchronize readdata or listdirectory readattributes [MASK] users [MASK] [UNK] [SEP]
-INFO:tensorflow:input_ids: 2219 1603 4647 2868 5655 645 1268 5845 2868 2868 973 3512 1603 4647 254 5655 645 1268 5845 1412 271 2064 2864 1360 4451 4718 5973 2868 2431 2868 973 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 8 9 27 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 254 1412 2973 5655 4969 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] or addsubdirectory or [MASK] c users aalsahee appdata local mozilla [MASK] profiles a6gl280b default safebrowsing [SEP] 516 c windows system32 svchost exe 11 [MASK] synchronize readattributes c [MASK] system32 [MASK] [SEP]
-INFO:tensorflow:input_ids: 2219 4451 5175 4451 2868 5655 2431 4969 5337 2918 208 2868 4562 4944 5663 155 3512 1144 5655 645 1268 2190 1412 271 2868 2864 5973 5655 2868 1268 2868 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 4 11 24 28 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5446 2030 2064 645 4807 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] windows system32 searchindexer exe 11 file synchronize [MASK] c programdata microsoft [UNK] [MASK] 2560 372 [SEP] svchost [MASK] 11 file synchronize readattributes c windows winsxs [MASK] microsoft [MASK] crt 1fc8b3b9a1e18e3b [SEP]
-INFO:tensorflow:input_ids: 2219 645 1268 3629 1412 271 2064 2864 2868 5655 5144 4565 973 2868 1685 5581 3512 2190 2868 271 2064 2864 5973 5655 645 1998 2868 4565 2868 2061 1894 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 8 13 18 26 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5973 1603 1412 1208 5302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3516 [MASK] c windows [MASK] dllhost exe 13 [UNK] [SEP] 2172 1736 c programfiles vmware vmwaretools vmtoolsd exe 11 file readdata or listdirectory c windows system32 windowspowershell v1 0 [SEP]
-INFO:tensorflow:input_ids: 2219 1603 3776 2868 5655 645 2868 4807 1412 2973 973 3512 4315 4311 5655 2467 918 289 628 1412 271 2064 1360 4451 4718 5655 645 1268 1370 956 5232 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 6 13 14 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 3559 1268 4311 5655 271 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] c windows system32 wbem wmiadap [MASK] 11 [MASK] synchronize [MASK] [MASK] listdirectory execute traverse c [SEP] 3732 2480 c windows system32 [MASK] wmiadap exe 11 file execute traverse c windows [SEP]
-INFO:tensorflow:input_ids: 2219 5655 645 1268 2387 3266 2868 271 2868 2864 2868 2868 4718 3993 2317 5655 3512 3318 3831 5655 645 1268 2868 3266 1412 271 2064 3993 2317 5655 645 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 6 8 10 11 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 1412 2064 1360 4451 2387 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] system32 svchost exe 11 [MASK] [MASK] [MASK] or listdirectory execute traverse c windows system32 bcryptprimitives [SEP] system32 [MASK] wmiprvse exe 11 file read control synchronize [MASK] or listdirectory readea readattributes [SEP]
-INFO:tensorflow:input_ids: 2219 1268 2190 1412 271 2868 2868 2868 4451 4718 3993 2317 5655 645 1268 2825 3512 1268 2868 2847 1412 271 2064 4868 2127 2864 2868 4451 4718 4953 5973 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 6 7 18 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 2064 2864 1360 2387 1360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 13 [UNK] 2 [MASK] [MASK] c windows system32 svchost exe 11 file synchronize readattributes c [SEP] 1012 1684 c windows system32 svchost [MASK] 11 [MASK] readattributes c windows system32 [MASK] [SEP]
-INFO:tensorflow:input_ids: 2219 2973 973 1603 2868 2868 5655 645 1268 2190 1412 271 2064 2864 5973 5655 3512 3211 1966 5655 645 1268 2190 2868 271 2868 5973 5655 645 1268 2868 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 4 5 23 25 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 3211 1966 1412 2064 4668 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] [MASK] 1684 c windows system32 [MASK] exe 11 file readattributes c users aalsahee ntuser dat [SEP] users aalsahee payload exe 11 file synchronize [MASK] or comodoca execute traverse c windows [SEP]
-INFO:tensorflow:input_ids: 2219 2868 1966 5655 645 1268 2868 1412 271 2064 5973 5655 2431 4969 5858 1863 3512 2431 4969 2197 1412 271 2064 2864 2868 4451 2810 3993 2317 5655 645 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 1 6 24 26 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 3211 2190 1360 4718 645 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3148 1760 c [MASK] mozillafirefox firefox exe 13 [UNK] [SEP] 11 file 3452 control synchronize [MASK] or listdirectory readea readattributes c alttab aalsahee appdata local mozilla firefox profiles a6gl280b [SEP]
-INFO:tensorflow:input_ids: 2219 1603 4875 1313 5655 2868 5786 2030 1412 2973 973 3512 271 2064 4180 2127 2864 2868 4451 4718 4953 5973 5655 3742 4969 5337 2918 208 2030 4562 4944 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 14 17 19 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 2467 4868 1360 4718 2431 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 516 1 [MASK] windows system32 services exe [MASK] [UNK] [SEP] c windows system32 consent exe 11 file read control synchronize readdata [MASK] listdirectory readea [MASK] c windows [MASK] input [SEP]
-INFO:tensorflow:input_ids: 2219 1603 1144 4036 2868 645 1268 371 1412 2868 973 3512 5655 645 1268 1560 1412 271 2064 4868 2127 2864 1360 2868 4718 4953 2868 5655 645 2868 1575 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 4 9 23 26 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5655 2973 4451 5973 1268 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2736 3372 c windows system32 wbem wmiprvse exe 11 file readdata or listdirectory c windows system32 [MASK] wmiprvse [SEP] 2 2180 1 [MASK] windows system32 wbem wmiprvse verisign 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 2219 1324 5735 5655 645 1268 2387 2847 1412 271 2064 1360 4451 4718 5655 645 1268 2868 2847 3512 1603 1088 4036 2868 645 1268 2387 2847 4675 2973 973 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 17 23 25 28 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 2387 5655 1268 1412 973 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] [MASK] shapecollector 1764 c programfiles vmware vmwaretools vmtoolsd exe 11 file readdata or listdirectory c [SEP] exe 13 [UNK] 2 2228 1764 c networkshortcuts vmware vmwaretools [MASK] exe 11 file [SEP]
-INFO:tensorflow:input_ids: 2219 2868 1501 254 5655 2467 918 289 628 1412 271 2064 1360 4451 4718 5655 3512 1412 2973 973 1603 3451 254 5655 5572 918 289 2868 1412 271 2064 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 1 2 7 24 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 1603 3451 289 2467 628 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] windows system32 wbem 2476 exe 11 file synchronize readdata or listdirectory execute traverse c [MASK] [SEP] [MASK] windows system32 wbem wmiprvse exe 11 file execute [MASK] [MASK] windows system32 netapi32 [SEP]
-INFO:tensorflow:input_ids: 2219 645 1268 2387 1989 1412 271 2064 2864 1360 4451 4718 3993 2317 5655 2868 3512 2868 645 1268 2387 2847 1412 271 2064 3993 2868 2868 645 1268 4390 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 4 15 17 26 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 2847 645 5655 2317 5655 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 1100 [MASK] c windows system32 svchost exe 13 [UNK] [SEP] 2 3536 2664 c [MASK] aalsahee pypayload exe 11 file [MASK] readdata or listdirectory c windows assembly nativeimages v2 [SEP]
-INFO:tensorflow:input_ids: 2219 1603 1249 2868 5655 645 1268 2190 1412 2973 973 3512 1603 5624 5146 5655 2868 4969 2208 1412 271 2064 2868 1360 4451 4718 5655 645 5136 1346 4874 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 4 16 22 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 1144 5655 2431 2864 1360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2172 1736 c programfiles [MASK] vmwaretools vmtoolsd exe [MASK] file execute traverse c windows system32 cryptsp dll [UNK] [SEP] 2 [MASK] 1736 c programfiles vmware vmwaretools vmtoolsd [MASK] 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 2219 4315 4311 5655 2467 2868 289 628 1412 2868 2064 3993 2317 5655 645 1268 5756 3310 973 3512 1603 2868 4311 5655 2467 918 289 628 2868 2973 973 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 9 13 21 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 918 271 5655 4315 1412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 1764 c programfiles vmware vmwaretools [MASK] exe 11 file synchronize readdata or listdirectory c windows [SEP] [MASK] wiz&hl=en&authuser=0&psi=mxyhxowzbzhytawdraq4dg windows explorer exe [MASK] [UNK] [MASK] 1760 1 c windows explorer exe [SEP]
-INFO:tensorflow:input_ids: 2219 254 5655 2467 918 289 2868 1412 271 2064 2864 1360 4451 4718 5655 645 3512 2868 3386 645 348 1412 2868 973 2868 1313 4036 5655 645 348 1412 3512
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 6 17 18 22 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 628 4036 5655 2973 1603 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:Wrote 1109964 total instances
-INFO:tensorflow:*** Writing to output files ***
-INFO:tensorflow:  ../training_data/Original/S4.tfrecord
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] [MASK] windows system32 [MASK] exe 5b859f4e2fdc491931c5b508dd3b42dfdb51c638 file readattributes c windows [MASK] x86 microsoft windows tabletpc journal 31bf3856ad364e35 6 1 [SEP] 2 2984 1736 c programfiles mozillafirefox firefox exe 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 14982 9277 15056 3828 9277 716 6432 5842 13402 9517 15056 9277 184 8612 15056 6607 15355 16233 14076 11656 5487 9962 7964 5476 9517 755 7035 16178 716 10439 8087 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 1 3 4 6 11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 9517 3828 7107 5406 1048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 [MASK] 628 c windows system32 dllhost exe 11 file c [MASK] pla rules rules system nettrace xml [MASK] [SEP] [MASK] 636 516 c windows system32 svchost exe 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 14982 9962 9277 14767 9517 15056 3828 7107 716 5406 5842 9517 9277 1574 7635 7635 3959 14064 6282 9277 5487 9277 2800 6129 9517 15056 3828 7473 716 10439 8087 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 12 19 21 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 523 15056 8087 9962 10439 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] dllhost [MASK] 11 file c windows microsoft net framework v4 0 30319 setupcache v4 5 [SEP] system32 dllhost exe 11 file [MASK] [MASK] microsoft net framework v4 0 [MASK] setupcache [SEP]
-INFO:tensorflow:input_ids: 14982 7107 9277 5406 5842 9517 15056 8612 1753 7550 13245 8729 1561 10838 13245 5482 5487 3828 7107 716 5406 5842 9277 9277 8612 1753 7550 13245 8729 9277 10838 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 21 22 23 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 716 5842 9517 15056 1561 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] exe 11 [MASK] readdata or listdirectory c users aalsahee appdata [MASK] mozilla firefox [MASK] a6gl280b [SEP] file writedata or addfile [MASK] or addsubdirectory or [MASK] c users aalsahee appdata local [SEP]
-INFO:tensorflow:input_ids: 14982 716 5406 9277 12585 14824 12739 9517 4675 5760 11461 9277 6581 16178 9277 16149 5487 5842 7557 14824 5921 9277 14824 4184 14824 9277 9517 4675 5760 11461 2110 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 11 14 21 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5842 2110 8075 3698 15603 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 [MASK] 628 c windows system32 dllhost exe 11 file c [MASK] wireshark [UNK] dll [SEP] firefox exe 11 file delete c [MASK] aalsahee appdata roaming mozilla firefox profiles [MASK] [SEP]
-INFO:tensorflow:input_ids: 14982 9962 9277 14767 9517 15056 3828 7107 716 5406 5842 9517 9277 3136 8087 9048 5487 16178 716 5406 5842 4257 9517 9277 5760 11461 1963 6581 16178 8075 9277 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 12 23 28 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 523 755 4675 16178 16149 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2536 c [MASK] system32 [MASK] exe 11 file [MASK] readattributes c [MASK] microsoft windows startmenu [SEP] windows system32 svchost exe 11 file readdata or listdirectory [MASK] windows system32 en us [SEP]
-INFO:tensorflow:input_ids: 14982 8865 9517 9277 3828 9277 716 5406 5842 9277 13402 9517 9277 8612 15056 11693 5487 15056 3828 7473 716 5406 5842 12585 14824 12739 9277 15056 3828 9892 13999 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 5 9 12 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 15056 262 7240 1384 9517 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 628 [MASK] [MASK] system32 dllhost exe 11 [UNK] 2 3060 628 c windows system32 dllhost [SEP] exe [MASK] file readattributes c windows winsxs [MASK] net1y32 inf resources 31bf3856ad364e35 6 [MASK] [SEP]
-INFO:tensorflow:input_ids: 14982 14767 9277 9277 3828 7107 716 5406 8087 9962 523 14767 9517 15056 3828 7107 5487 716 9277 5842 13402 9517 15056 1048 9277 14095 3313 567 16233 14076 9277 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 3 18 24 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 9517 15056 5406 184 11656 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] winword exe 11 [MASK] synchronize readattributes c users [UNK] 2 1916 1736 [MASK] programfiles microsoftoffice [SEP] [MASK] 1916 1736 [MASK] programfiles microsoftoffice office14 winword exe 11 [MASK] synchronize readattributes c [SEP]
-INFO:tensorflow:input_ids: 14982 10641 716 5406 9277 7240 13402 9517 4675 8087 9962 12604 5476 9277 755 5762 5487 9277 12604 5476 9277 755 5762 7877 10641 716 5406 9277 7240 13402 9517 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 4 13 17 20 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5842 9517 9962 9517 5842 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] system32 dllhost exe 11 file [MASK] [MASK] winsxs x86 microsoft windows [MASK] dac oledb stub [UNK] [MASK] 6 1 [SEP] 2 1148 2164 c programfiles [MASK] dumpcap exe 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 14982 3828 7107 716 5406 5842 9277 9277 1048 184 8612 15056 9277 15709 1253 8881 8087 9277 14076 11656 5487 9962 626 15310 9517 755 9277 16157 716 10439 8087 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 6 7 12 17 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 9517 15056 2183 16233 3136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 [MASK] 2536 c windows system32 [MASK] exe 13 [UNK] [SEP] c windows system32 [MASK] exe 11 [MASK] synchronize readattributes c users aalsahee [UNK] 2 [MASK] 2536 c windows system32 [SEP]
-INFO:tensorflow:input_ids: 14982 9962 9277 8865 9517 15056 3828 9277 716 10439 8087 5487 9517 15056 3828 9277 716 5406 9277 7240 13402 9517 4675 5760 8087 9962 9277 8865 9517 15056 3828 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 7 15 18 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12730 262 262 5842 12730 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3340 1764 c windows system32 [MASK] exe 13 [UNK] [SEP] 932 516 c windows system32 [MASK] exe 11 file synchronize readdata or listdirectory 7d1d9b8c3c8f2a9e windows system32 driverstore en us [SEP]
-INFO:tensorflow:input_ids: 14982 9962 13510 12181 9517 15056 3828 9277 716 10439 8087 5487 5599 6129 9517 15056 3828 9277 716 5406 5842 7240 12585 14824 12739 5682 15056 3828 13941 9892 13999 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 7 17 20 25 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 14346 7473 5842 9517 9892 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3060 628 c [MASK] system32 dllhost exe 13 [UNK] [SEP] 2 2180 1 c windows system32 wbem wmiprvse exe 11 file [MASK] or listdirectory [MASK] [MASK] system32 tzres dll [SEP]
-INFO:tensorflow:input_ids: 14982 9962 523 14767 9517 9277 3828 7107 716 10439 8087 5487 9962 6973 11656 9517 15056 3828 3749 8348 716 5406 5842 9277 14824 12739 9277 9277 3828 9401 9048 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 1 5 23 26 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 9962 15056 12585 9517 15056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] c ehsidebarres system32 [MASK] exe [MASK] file c windows system32 driverstore filerepository prnhp003 inf x86 neutral [MASK] i386 [UNK] [SEP] 2 3060 628 c windows [MASK] dllhost exe 11 [UNK] [SEP]
-INFO:tensorflow:input_ids: 14982 9517 15536 3828 9277 716 9277 5842 9517 15056 3828 13941 5864 13985 3313 184 8404 9277 1324 8087 5487 9962 523 14767 9517 15056 9277 7107 716 5406 8087 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 4 6 17 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 15056 7107 5406 4244 3828 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 [MASK] 1916 c programfiles microsoftoffice office14 winword exe 13 [MASK] [SEP] dllhost exe 11 file c [MASK] [MASK] desktop newfolder 14 4905 4734 1000 professionalplus volume x86 en us [SEP]
-INFO:tensorflow:input_ids: 14982 9962 9277 12604 9517 755 5762 7877 10641 716 10439 9277 5487 7107 716 5406 5842 9517 9277 9277 4708 13425 16253 7750 24 6609 8476 6409 184 9892 13999 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 11 18 19 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 86 8087 4675 5760 8729 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] windows system32 svchost exe 11 file readattributes c windows [MASK] ole32 dll [UNK] 2 1100 [SEP] 2 2064 516 [MASK] [MASK] aalsahee payload exe 11 file [MASK] readdata or listdirectory [SEP]
-INFO:tensorflow:input_ids: 14982 15056 3828 7473 716 5406 5842 13402 9517 15056 9277 5339 9048 8087 9962 10501 5487 9962 9334 6129 9277 9277 5760 4293 716 5406 5842 9277 12585 14824 12739 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 10 20 21 22 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 3828 9517 4675 5760 7240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3060 628 c windows system32 dllhost exe 13 [UNK] [SEP] 748 516 c windows system32 svchost exe 11 file synchronize [MASK] or listdirectory [MASK] traverse [MASK] windows system32 wshtcpip [SEP]
-INFO:tensorflow:input_ids: 14982 9962 523 14767 9517 15056 3828 7107 716 10439 8087 5487 1846 6129 9517 15056 3828 7473 716 5406 5842 7240 9277 14824 12739 9277 9872 9277 15056 3828 9025 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 22 23 25 27 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12585 14824 5583 9517 3828 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 628 c windows system32 dllhost exe 11 file c python27 tcl tcl8 5 msgs be [SEP] firefox exe 11 file [MASK] c users [MASK] appdata lex mozilla [MASK] profiles [MASK] [SEP]
-INFO:tensorflow:input_ids: 14982 14767 9517 15056 3828 7107 716 5406 5842 9517 9814 14057 121 5482 3290 11512 5487 16178 716 5406 5842 9277 9517 4675 9277 11461 15478 6581 9277 8075 9277 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 21 24 26 28 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 13402 5760 2110 16178 16149 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 3060 [MASK] c windows system32 dllhost [MASK] 11 file c programfiles windowssidebar gadgets picturepuzzle gadget images hint down png [SEP] [MASK] [MASK] 628 c windows system32 dllhost exe [MASK] [UNK] [SEP]
-INFO:tensorflow:input_ids: 14982 523 9277 9517 15056 3828 7107 9277 5406 5842 9517 755 5212 3576 8434 12627 7085 1498 4640 6284 5487 9277 9277 14767 9517 15056 3828 7107 716 9277 8087 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 7 21 22 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 14767 716 9962 523 5406 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] c [MASK] vmware vmwaretools vmtoolsd exe 11 file read [MASK] synchronize readdata or listdirectory readea readattributes c windows system32 [SEP] 2 [MASK] 628 c windows system32 [MASK] exe 11 [UNK] [SEP]
-INFO:tensorflow:input_ids: 14982 9517 9277 6701 9396 116 716 5406 5842 12189 9277 7240 12585 14824 12739 3934 13402 9517 15056 3828 5487 9962 9277 14767 9517 15056 3828 9277 716 5406 8087 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 10 22 23 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 755 7812 523 14767 7107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 11 file [MASK] c users aalsahee appdata [MASK] mozilla [MASK] profiles a6gl280b [MASK] safebrowsing to [SEP] 2 0 1 172 217 9 46 443 192 168 [MASK] 128 49261 9 [SEP]
-INFO:tensorflow:input_ids: 14982 5406 5842 9277 9517 4675 5760 11461 9277 6581 9277 8075 16149 9277 13226 1974 5487 9962 8729 11656 5224 134 4177 11725 11948 4374 10978 9277 1028 5563 4177 5487
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 8 10 13 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 4257 2110 16178 5716 3371 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Writing to output files ***
-INFO:tensorflow:  ../training_data/Original/S3.tfrecord
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] listdirectory c users aalsahee [MASK] local [MASK] firefox [MASK] a6gl280b default safebrowsing backup goog malware [SEP] c windows system32 svchost exe 11 file readdata or listdirectory c windows system32 [MASK] [SEP]
-INFO:tensorflow:input_ids: 2801 1788 7665 8586 6719 16341 8220 16341 5373 16341 764 10246 2476 6217 11144 2970 7909 7665 2792 1126 366 5282 5718 12698 5758 8296 1788 7665 2792 1126 16341 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 7 9 23 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 14310 6417 2668 12698 1383 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 628 c [MASK] [MASK] dllhost [MASK] 11 file c [MASK] system32 sv se dwrite dll [SEP] 628 c windows system32 dllhost exe 11 file c windows system32 [MASK] se fms [SEP]
-INFO:tensorflow:input_ids: 2801 11094 7665 16341 16341 8529 16341 5718 12698 7665 16341 1126 1714 6552 7542 5154 7909 11094 7665 2792 1126 8529 5282 5718 12698 7665 2792 1126 16341 6552 10443 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 4 6 10 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 2792 1126 5282 2792 1714 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] system32 dllhost exe 11 [MASK] read [MASK] access sys sec readattributes c [MASK] winsxs x86 microsoft windows p ecounters resources [SEP] 2 1764 [MASK] c windows explorer [MASK] 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 2801 1126 8529 5282 5718 16341 10206 16341 16573 6116 6196 13322 7665 16341 9332 11423 11514 2792 1751 1232 5383 7909 6042 3383 16341 7665 2792 3467 16341 12934 15816 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 7 13 24 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12698 5530 2792 1584 5282 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] dllhost exe 11 file [MASK] windows winsxs manifests x86 microsoft windows [UNK] [MASK] 6 1 [SEP] firefox exe 11 file read control synchronize readdata [MASK] listdirectory [MASK] readattributes c users [SEP]
-INFO:tensorflow:input_ids: 2801 8529 5282 5718 12698 16341 2792 9332 13253 11423 11514 2792 15816 16341 6870 5416 7909 5373 5282 5718 12698 10206 5530 11343 5758 16341 1788 16341 13322 7665 8586 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 12 13 25 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 7665 15816 10552 8296 15135 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 1764 864 c windows explorer exe dfrgui file synchronize [MASK] or listdirectory readattributes c users aalsahee appdata local microsoft [SEP] 2 3340 1764 c windows [MASK] winsat [MASK] 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 2801 3383 1584 7665 2792 3467 5282 12019 12698 11343 16341 8296 1788 13322 7665 8586 6719 14310 8220 11514 7909 6042 4053 3383 7665 2792 16341 8268 16341 12934 15816 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 7 10 23 26 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5718 5758 3383 1126 5282 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] exe 11 file [MASK] windows [MASK] [MASK] microsoft windows uianimation 31bf3856ad364e35 6 1 7600 16385 [SEP] 636 516 c windows system32 svchost exe [MASK] file readdata [MASK] listdirectory c windows [SEP]
-INFO:tensorflow:input_ids: 2801 5282 5718 12698 16341 2792 16341 16341 11514 2792 5878 10552 6870 5416 13401 9015 7909 2815 6298 7665 2792 1126 366 5282 16341 12698 5758 16341 1788 7665 2792 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 4 6 7 24 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 7665 9332 11423 5718 8296 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3536 2664 c users aalsahee pypayload exe 13 [UNK] [UNK] [SEP] users aalsahee pypayload [MASK] 11 file synchronize readdata or listdirectory c ionplugin aalsahee appdata local [MASK] 190 history [SEP]
-INFO:tensorflow:input_ids: 2801 6042 718 2650 7665 8586 6719 338 5282 12934 15816 15816 7909 8586 6719 338 16341 5718 12698 11343 5758 8296 1788 7665 11528 6719 14310 8220 16341 6151 8547 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 16 23 24 28 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5282 7665 8586 11514 2792 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] exe [MASK] file read control [MASK] users aalsahee desktop newfolder 14 0 4734 1000 professionalplus [SEP] [MASK] readdata [MASK] listdirectory writedata or addfile appenddata or addsubdirectory or createpipeinstance readea [MASK] [SEP]
-INFO:tensorflow:input_ids: 2801 5282 16341 12698 10206 5530 16341 8586 6719 6775 6305 16587 6126 4615 10544 6812 7909 16341 5758 16341 1788 2224 8296 5151 3482 8296 8924 8296 8045 15135 16341 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 6 17 19 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5718 7665 11343 8296 6657 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3904 1736 c [MASK] wireshark dumpcap exe 11 file execute cab238 c windows system32 [SEP] 628 c windows system32 dllhost exe 11 [MASK] c windows [MASK] driver subsystem for [SEP]
-INFO:tensorflow:input_ids: 2801 6042 12319 16077 7665 16341 7273 2975 5282 5718 12698 11696 6242 7665 2792 1126 7909 11094 7665 2792 1126 8529 5282 5718 16341 7665 2792 16341 2729 2630 6533 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 12 24 27 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12710 7492 12698 9332 11423 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] dllhost exe 11 file [MASK] windows winsxs backup x86 microsoft windows rasserver 31bf3856ad364e35 6 1 [SEP] control synchronize readdata [MASK] listdirectory writedata or addfile [MASK] or addsubdirectory [MASK] createpipeinstance readea [SEP]
-INFO:tensorflow:input_ids: 2801 8529 5282 5718 12698 16341 2792 9332 6217 11423 11514 2792 16459 10552 6870 5416 7909 5530 11343 5758 16341 1788 2224 8296 5151 16341 8296 8924 16341 8045 15135 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 20 21 25 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 7665 8296 1788 3482 8296 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 744 c users aalsahee [MASK] exe 11 file synchronize readdata or listdirectory c [MASK] ru [SEP] windows system32 svchost [MASK] 11 file readattributes [MASK] windows [MASK] vss ps dll [UNK] [SEP]
-INFO:tensorflow:input_ids: 2801 7992 7665 8586 6719 16341 5282 5718 12698 11343 5758 8296 1788 7665 16341 13529 7909 2792 1126 366 16341 5718 12698 13322 16341 2792 16341 4331 431 5154 15816 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 14 20 24 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 16086 10583 5282 7665 1126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 3536 2664 c users [MASK] pypayload exe [MASK] file synchronize readdata or listdirectory c windows inf servicemodeloperation3 0 0 [SEP] 2 636 516 c windows system32 svchost [MASK] 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 2801 718 2650 7665 8586 16341 338 5282 16341 12698 11343 5758 8296 1788 7665 2792 15791 4820 6126 6126 7909 6042 2815 6298 7665 2792 1126 366 16341 12934 15816 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 5 8 13 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 7665 6719 5718 1788 5282 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] c programfiles mozillafirefox firefox exe 11 file readdata or listdirectory c users aalsahee appdata local [SEP] [MASK] tarfd63 tpc googlesyndication com pagead js [MASK] r20110914 abg lite [MASK] 7 [UNK] [SEP]
-INFO:tensorflow:input_ids: 2801 7665 12710 4497 5373 5282 5718 12698 5758 8296 1788 7665 8586 6719 14310 8220 7909 16341 7690 10051 2058 15274 376 7516 16341 3549 12985 12498 16341 16520 15816 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 9 17 18 24 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 8296 4637 11091 16203 7516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] [MASK] 516 c users [MASK] payload exe 11 file [MASK] c users aalsahee appdata local temp tar4b8e tmp [SEP] 2 2064 516 [MASK] users aalsahee payload exe [MASK] [UNK] [UNK] [SEP]
-INFO:tensorflow:input_ids: 2801 16341 6298 7665 8586 16341 16086 5282 5718 12698 16341 7665 8586 6719 14310 8220 6639 10422 7643 7909 6042 11801 6298 16341 8586 6719 16086 5282 16341 15816 15816 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 1 5 10 23 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 11801 6719 7036 7665 12934 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 1760 1 c windows explorer exe [MASK] file synchronize readattributes [MASK] users aalsahee [MASK] roaming microsoft [MASK] quicklaunch userpinned [MASK] [SEP] 2 1760 1 c windows explorer exe 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 2801 7971 5416 7665 2792 3467 5282 16341 12698 11343 13322 16341 8586 6719 16341 2419 11514 16341 2438 12750 16341 7909 6042 7971 5416 7665 2792 3467 5282 12934 15816 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 7 11 14 17 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5718 7665 14310 14740 11936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] [MASK] 2536 516 c windows system32 [MASK] [MASK] 11 file readdata or listdirectory c windows [SEP] [MASK] file synchronize readdata or listdirectory c windows include smsvchost4 0 0 0 0804 [SEP]
-INFO:tensorflow:input_ids: 2801 16341 10093 6298 7665 2792 1126 16341 16341 5718 12698 5758 8296 1788 7665 2792 7909 16341 12698 11343 5758 8296 1788 7665 2792 1109 3157 6126 6126 6126 5380 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 1 7 8 17 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 6042 6521 5282 5718 15791 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 628 c windows system32 dllhost exe 11 file c programfiles [MASK] office14 pubwiz [UNK] poc [SEP] [UNK] [MASK] request clients5 [MASK] com pagead [MASK] ne ? [UNK] [UNK] [UNK] [UNK] [SEP]
-INFO:tensorflow:input_ids: 2801 11094 7665 2792 1126 8529 5282 5718 12698 7665 12710 16341 14938 3895 15816 15760 7909 15816 16341 11091 9754 16341 15274 376 16341 15102 1978 15816 15816 15816 15816 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 6 11 18 21 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5282 2210 4637 5048 10115 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] [MASK] programfiles mozillafirefox firefox [MASK] 11 [MASK] synchronize readdata or listdirectory readattributes c programfiles mozillafirefox [SEP] file read control synchronize beap or listdirectory readea readattributes c users aalsahee [MASK] locallow [SEP]
-INFO:tensorflow:input_ids: 2801 16341 12710 4497 5373 16341 5718 16341 11343 5758 8296 1788 13322 7665 12710 4497 7909 12698 10206 5530 11343 13467 8296 1788 15135 13322 7665 8586 6719 16341 1743 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 1 5 7 21 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 7665 5282 12698 5758 14310 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3340 1764 [MASK] windows system32 winsat exe 11 file [MASK] or listdirectory c feed inf termservice 0000 [UNK] [SEP] 2 3340 1764 [MASK] windows system32 winsat exe 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 2801 6042 4053 3383 16341 2792 1126 8268 5282 5718 12698 16341 8296 1788 7665 11941 15791 16360 12134 15816 7909 6042 4053 3383 16341 2792 1126 8268 5282 12934 15816 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 1 4 11 15 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 6042 7665 5758 2792 7665 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] exe 11 file writedata or [MASK] appenddata or addsubdirectory [MASK] createpipeinstance websafe users aalsahee appdata [SEP] 5fb363995f641833f19864aa2bbf741efe2bd0d1 c [MASK] system32 svchost exe 11 file readea c windows system32 taskhost exe [SEP]
-INFO:tensorflow:input_ids: 2801 5282 5718 12698 2224 8296 16341 3482 8296 8924 16341 8045 16143 8586 6719 14310 7909 7965 7665 16341 1126 366 5282 5718 12698 15135 7665 2792 1126 5183 5282 7909
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 6 10 12 17 19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 5151 8296 7665 13843 2792 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Writing to output files ***
-INFO:tensorflow:  ../training_data/Original/S1.tfrecord
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] readattributes c windows winsxs x86 microsoft [MASK] p i ntprint resources 31bf3856ad364e35 6 1 [MASK] [SEP] c windows system32 logonui [MASK] 11 file execute [MASK] c windows system32 samcli dll [SEP]
-INFO:tensorflow:input_ids: 1576 10671 4242 12823 1577 4405 13791 2760 10043 13756 9422 16545 8802 3976 7888 2760 14447 4242 12823 6430 15711 2760 13839 13374 7755 2760 4242 12823 6430 15905 16609 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 7 12 15 21 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12823 8802 14515 4648 15105 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] dllhost exe 11 file c windows winsxs manifests [MASK] wcf infocard api dll 31bf3856ad364e35 6 1 7600 16385 [SEP] 2 2228 1764 c programfiles vmware vmwaretools vmtoolsd exe [MASK] [MASK] [SEP]
-INFO:tensorflow:input_ids: 1576 8854 4648 13839 13374 4242 12823 1577 14731 2760 16785 11733 14548 16609 8802 3976 7888 14515 11053 14447 5955 502 13299 4242 12281 5736 15368 14419 4648 2760 2760 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 6 8 9 29 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12823 14731 4405 1053 16148 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] c [MASK] system32 dllhost exe 11 file c windows system32 migwiz [MASK] terminalservices localsessionmanager dl [SEP] 516 c windows system32 svchost exe 11 [MASK] synchronize readdata or listdirectory c 0c1053ba [SEP]
-INFO:tensorflow:input_ids: 1576 4242 2760 6430 8854 4648 13839 13374 4242 12823 6430 1495 2760 6278 2595 3709 14447 2670 4242 12823 6430 11400 4648 13839 2760 11388 1924 1791 214 4242 8328 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 12 23 24 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12823 15827 13839 13374 12823 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 2536 516 [MASK] windows system32 searchindexer exe 13 [UNK] [SEP] [MASK] [MASK] 628 c windows system32 dllhost exe 11 file c [MASK] assembly [MASK] v2 0 50727 32 microsoft [SEP]
-INFO:tensorflow:input_ids: 1576 5955 2910 2670 2760 12823 6430 10181 4648 1053 16148 14447 2760 2760 1471 4242 12823 6430 8854 4648 13839 13374 4242 2760 1992 2760 14135 5646 9059 2102 13791 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 4 12 13 23 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 4242 5955 1788 12823 12442 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 2536 [MASK] [MASK] windows system32 searchindexer [MASK] 13 [UNK] [SEP] 3060 [MASK] c windows system32 [MASK] exe 11 file c windows assembly gac msil microsoft office businessapplications runtime intl [SEP]
-INFO:tensorflow:input_ids: 1576 5955 2910 2760 2760 12823 6430 10181 2760 1053 16148 14447 1788 2760 4242 12823 6430 2760 4648 13839 13374 4242 12823 1992 13266 9544 13791 9643 5390 3453 9309 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 4 8 13 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 2670 4242 4648 1471 8854 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] system32 dllhost exe 11 file c windows [MASK] manifests [MASK] microsoft windows i onal [MASK] 10001 31bf3856ad364e35 6 1 [SEP] [MASK] 3948 372 c windows system32 werfault exe 13 schedlgu [SEP]
-INFO:tensorflow:input_ids: 1576 6430 8854 4648 13839 13374 4242 12823 2760 14731 2760 13791 12823 13756 3291 2760 16194 8802 3976 7888 14447 2760 3816 13220 4242 12823 6430 13264 4648 1053 2164 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 8 10 15 21 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 1577 4405 10932 5955 16148 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3060 [MASK] [MASK] windows system32 dllhost exe [MASK] [UNK] [SEP] 2 3060 628 c windows system32 dllhost exe 13 [UNK] [SEP]
-INFO:tensorflow:input_ids: 1576 5955 1788 2760 2760 12823 6430 8854 4648 2760 16148 14447 5955 1788 1471 4242 12823 6430 8854 4648 1053 16148 14447 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_positions: 3 4 9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 1471 4242 13839 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3060 628 c [MASK] system32 [MASK] exe 13 [UNK] [SEP] programfiles mozillafirefox e2f294ce49e59677a2a0b982f3c06b9c0bd56a4b [MASK] 11 file delete c users aalsahee appdata [MASK] mozilla firefox profiles a6gl280b default cache2 trash11019 [SEP]
-INFO:tensorflow:input_ids: 1576 5955 1788 1471 4242 2760 6430 2760 4648 1053 16148 14447 12281 7016 12332 2760 13839 13374 4488 4242 2515 5940 6381 2760 14121 13761 9731 348 8179 9189 5425 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 7 14 15 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12823 8854 13761 4648 5240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 2396 1764 c windows system32 mmc exe 13 [UNK] [SEP] 2 2396 1764 c [MASK] system32 52092 exe 6c588ee4375b file synchronize readdata or listdirectory [MASK] c windows system32 ntshrui [SEP]
-INFO:tensorflow:input_ids: 1576 5955 4491 13299 4242 12823 6430 3803 4648 1053 16148 14447 5955 4491 13299 4242 2760 6430 12938 4648 3045 13374 11388 1924 1791 214 2760 4242 12823 6430 13481 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 16 18 20 23 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12823 3803 13839 1924 10671 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] c [MASK] system32 wbem wmiprvse [MASK] 11 file readdata or listdirectory c windows [MASK] tzres [SEP] [MASK] c programfiles microsoftoffice office14 [MASK] exe 11 file readattributes c users desktop ini [SEP]
-INFO:tensorflow:input_ids: 1576 4242 2760 6430 10377 11615 2760 13839 13374 1924 1791 214 4242 12823 2760 13272 14447 2760 4242 12281 9164 5696 2760 4648 13839 13374 10671 4242 2515 11142 355 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 6 14 17 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12823 4648 6430 13975 1849 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] file readattributes c windows winsxs x86 microsoft [MASK] 2be8ee9a8c4d1f5caa3974d67090e36ab2c86e23 chrecognizereng ale 31bf3856ad364e35 6 1 [MASK] [SEP] [MASK] 516 c programfiles [MASK] vmwaretools vmtoolsd exe 11 file readdata or listdirectory c [SEP]
-INFO:tensorflow:input_ids: 1576 13374 10671 4242 12823 1577 4405 13791 2760 12073 7762 15575 8802 3976 7888 2760 14447 2760 2670 4242 12281 2760 15368 14419 4648 13839 13374 1924 1791 214 4242 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 8 9 15 17 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 12823 13613 14515 10955 5736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 3060 628 c windows system32 dllhost exe 11 rity [SEP] 11 file [MASK] c windows winsxs [MASK] [MASK] windows a apc layer [MASK] 31bf3856ad364e35 6 1 7600 16385 en [SEP]
-INFO:tensorflow:input_ids: 1576 5955 1788 1471 4242 12823 6430 8854 4648 13839 10581 14447 13839 13374 2760 4242 12823 1577 2760 2760 12823 5619 12251 1364 2760 8802 3976 7888 14515 11053 3936 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 10 14 18 19 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 16148 10671 4405 13791 16545 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] c windows system32 notepad [MASK] 11 file execute traverse c windows system32 [MASK] [MASK] [UNK] [SEP] 13 [UNK] 2 988 [MASK] [MASK] windows system32 svchost exe 11 file synchronize readattributes [SEP]
-INFO:tensorflow:input_ids: 1576 4242 12823 6430 6981 2760 13839 13374 7755 15105 4242 12823 6430 2760 2760 16148 14447 1053 16148 5955 16135 2760 2760 12823 6430 11400 4648 13839 13374 11388 10671 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 5 13 14 21 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 4648 15390 16609 2670 4242 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] [UNK] 2 1012 [MASK] c windows system32 svchost exe 11 [MASK] synchronize readattributes c windows [SEP] file [MASK] control synchronize readdata or listdirectory readea readattributes c [MASK] system32 en [MASK] [SEP]
-INFO:tensorflow:input_ids: 1576 16148 5955 5292 2760 4242 12823 6430 11400 4648 13839 2760 11388 10671 4242 12823 14447 13374 2760 13822 11388 1924 1791 214 15823 10671 4242 2760 6430 3936 2760 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 4 11 18 27 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 15903 13374 8500 12823 16353 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] read control [MASK] windows winsxs x86 server help chm [UNK] [MASK] [MASK] resources 31bf3856ad364e35 6 [SEP] [MASK] 2536 c windows [MASK] wbem wmiprvse exe 11 file readdata or listdirectory c [SEP]
-INFO:tensorflow:input_ids: 1576 8500 13822 2760 12823 1577 4405 3931 8606 12161 16148 2760 2760 16545 8802 3976 14447 2760 2910 4242 12823 2760 10377 11615 4648 13839 13374 1924 1791 214 4242 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 3 11 12 17 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 4242 6060 15244 15796 6430 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 [MASK] 516 [MASK] windows system32 svchost exe 13 [UNK] [SEP] mozillafirefox firefox exe 13 [UNK] 2 988 516 c windows system32 svchost [MASK] 11 file synchronize readattributes c [MASK] [SEP]
-INFO:tensorflow:input_ids: 1576 5955 2760 2670 2760 12823 6430 11400 4648 1053 16148 14447 7016 13761 4648 1053 16148 5955 16135 2670 4242 12823 6430 11400 2760 13839 13374 11388 10671 4242 2760 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 4 17 24 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 16135 4242 5955 4648 12281 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] system32 [MASK] exe 11 file c windows microsoft [MASK] [MASK] gac msil system drawing design v4 0 4 0 [SEP] 2 3060 628 c windows system32 qappsrv exe 11 [UNK] [SEP]
-INFO:tensorflow:input_ids: 1576 6430 2760 4648 13839 13374 4242 12823 13791 2760 2760 13266 9544 10730 85 600 1880 5646 15140 5646 14447 5955 1788 1471 4242 12823 6430 16218 4648 13839 16148 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 9 10 18 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 8854 11812 1992 15140 8854 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 0
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 1776 device harddiskvolume1 programfiles mozillafirefox [MASK] exe 192 168 223 128 [UNK] 50 63 [MASK] [SEP] tar819a file read [MASK] synchronize readdata or listdirectory readea execute traverse readattributes [MASK] windows [SEP]
-INFO:tensorflow:input_ids: 1576 5424 15775 14611 12281 7016 2760 4648 3143 15815 10914 13186 16148 14963 905 2760 14447 9828 13374 8500 2760 11388 1924 1791 214 15823 7755 15105 10671 2760 12823 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 6 15 17 20 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 13761 4126 13839 13822 4242 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 termservice 2664 c users [MASK] pypayload exe [MASK] [MASK] [UNK] [SEP] 2 [MASK] 516 c windows system32 svchost exe 11 file execute traverse c windows system32 gpapi dll [UNK] [SEP]
-INFO:tensorflow:input_ids: 1576 5955 8066 16000 4242 2515 2760 8618 4648 2760 2760 16148 14447 5955 2760 2670 4242 12823 6430 11400 4648 13839 13374 7755 15105 4242 12823 6430 9271 16609 16148 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 2 6 9 10 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 1990 5940 1053 16148 10158 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:*** Example ***
-INFO:tensorflow:tokens: [CLS] 2 420 1 [MASK] [MASK] system32 csrss exe 13 [MASK] [SEP] system32 searchfilterhost hpo4pg3l 13 [UNK] 2 2432 2480 c windows system32 searchfilterhost exe 11 1a2d7a1f3c197ffa synchronize readdata or listdirectory [SEP]
-INFO:tensorflow:input_ids: 1576 5955 11013 7888 2760 2760 6430 13436 4648 1053 2760 14447 6430 8582 3363 1053 16148 5955 6782 6738 4242 12823 6430 8582 4648 13839 3153 11388 1924 1791 214 14447
-INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-INFO:tensorflow:masked_lm_positions: 4 5 10 14 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_ids: 4242 12823 16148 4648 13374 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-INFO:tensorflow:masked_lm_weights: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-INFO:tensorflow:next_sentence_labels: 1
-INFO:tensorflow:Wrote 2030749 total instances
-INFO:tensorflow:Wrote 2027583 total instances
-INFO:tensorflow:Wrote 2224189 total instances
+Traceback (most recent call last):
+  File "create_ablation_sets.py", line 71, in <module>
+    gt_indices = np.load('/root/Airtag/ground_truth/S'+str(j+1)+'_number_.npy')
+  File "/usr/local/lib/python3.5/dist-packages/numpy/lib/npyio.py", line 384, in load
+    fid = open(file, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/root/Airtag/ground_truth/S1_number_.npy'
+python: can't open file '../create_vocab.py': [Errno 2] No such file or directory
+python: can't open file '../create_vocab.py': [Errno 2] No such file or directory
+python: can't open file '../create_vocab.py': [Errno 2] No such file or directory
+python: can't open file '../create_vocab.py': [Errno 2] No such file or directory
+mv: cannot stat '/root/AirTag/training_data/AblationOne/vocab_training_preprocessed_logs_S1-CVE-2015-5122_windows': No such file or directory
+mv: mv: cannot stat '/root/AirTag/training_data/AblationOne/vocab_training_preprocessed_logs_S3-CVE-2017-11882_windows'cannot stat '/root/AirTag/training_data/AblationOne/vocab_training_preprocessed_logs_S2-CVE-2015-3105_windows': No such file or directory: No such file or directory
+
+mv: cannot stat '/root/AirTag/training_data/AblationOne/vocab_training_preprocessed_logs_S4-CVE-2017-0199_windows_py': No such file or directory
+Traceback (most recent call last):
+  File "../create_pretraining_data.py", line 469, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "../create_pretraining_data.py", line 440, in main
+    vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case)
+  File "/root/AirTag/tokenization.py", line 165, in __init__
+    self.vocab = load_vocab(vocab_file)
+  File "/root/AirTag/tokenization.py", line 127, in load_vocab
+    token = convert_to_unicode(reader.readline())
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/lib/io/file_io.py", line 183, in readline
+    self._preread_check()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/lib/io/file_io.py", line 85, in _preread_check
+    compat.as_bytes(self.__name), 1024 * 512, status)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/errors_impl.py", line 526, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.NotFoundError: ../training_data/AblationOne/vocab_atlas_single1_ablation_one.txt; No such file or directory
+Traceback (most recent call last):
+  File "../create_pretraining_data.py", line 469, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "../create_pretraining_data.py", line 440, in main
+    vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case)
+  File "/root/AirTag/tokenization.py", line 165, in __init__
+    self.vocab = load_vocab(vocab_file)
+  File "/root/AirTag/tokenization.py", line 127, in load_vocab
+    token = convert_to_unicode(reader.readline())
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/lib/io/file_io.py", line 183, in readline
+    self._preread_check()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/lib/io/file_io.py", line 85, in _preread_check
+    compat.as_bytes(self.__name), 1024 * 512, status)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/errors_impl.py", line 526, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.NotFoundError: ../training_data/AblationOne/vocab_atlas_single3_ablation_one.txt; No such file or directory
+Traceback (most recent call last):
+  File "../create_pretraining_data.py", line 469, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "../create_pretraining_data.py", line 440, in main
+    vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case)
+  File "/root/AirTag/tokenization.py", line 165, in __init__
+    self.vocab = load_vocab(vocab_file)
+  File "/root/AirTag/tokenization.py", line 127, in load_vocab
+    token = convert_to_unicode(reader.readline())
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/lib/io/file_io.py", line 183, in readline
+    self._preread_check()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/lib/io/file_io.py", line 85, in _preread_check
+    compat.as_bytes(self.__name), 1024 * 512, status)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/errors_impl.py", line 526, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.NotFoundError: ../training_data/AblationOne/vocab_atlas_single4_ablation_one.txt; No such file or directory
+Traceback (most recent call last):
+  File "../create_pretraining_data.py", line 469, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "../create_pretraining_data.py", line 440, in main
+    vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case)
+  File "/root/AirTag/tokenization.py", line 165, in __init__
+    self.vocab = load_vocab(vocab_file)
+  File "/root/AirTag/tokenization.py", line 127, in load_vocab
+    token = convert_to_unicode(reader.readline())
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/lib/io/file_io.py", line 183, in readline
+    self._preread_check()
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/lib/io/file_io.py", line 85, in _preread_check
+    compat.as_bytes(self.__name), 1024 * 512, status)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/errors_impl.py", line 526, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.NotFoundError: ../training_data/AblationOne/vocab_atlas_single2_ablation_one.txt; No such file or directory
