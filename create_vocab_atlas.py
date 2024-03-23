@@ -1,12 +1,21 @@
 import csv
 import re
+import os
 
 import time
 begin=time.time()
+
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('-path', action='store', default=None, dest='path')
+parser.add_argument('-t_name', action='store')
+parser.add_argument('-v_name', action='store')
+args = parser.parse_args()
+
 words={}
 flag=3
 data=[]
-filename=''
+filename=args.path
 f=open(filename,'r',encoding='utf-8')
 data=f.read().split('\n')
 f.close()
@@ -61,11 +70,16 @@ for i in words.keys():
         word_set.add(i)
 for i in ["[PAD]","[UNK]","[CLS]","[SEP]","[MASK]", "sim", 'sim_no', 'unlabeled','placeholder']:
     word_set.add(i)
-f1=open('vocab_'+filename,'w',encoding='utf-8')
+
+dir_name = os.path.dirname(filename)
+t_path = dir_name + '/' + args.t_name
+v_path = dir_name + '/' + args.v_name
+
+f1=open(v_path,'w',encoding='utf-8')
 f1.write('\n'.join(list(word_set)))
 f1.close()
 
-f1=open('train_'+filename,'w',encoding='utf-8')
+f1=open(t_path,'w',encoding='utf-8')
 f1.write("\n".join(strr_store))
 f1.close()
 

@@ -1,0 +1,7 @@
+embedding_data/
+ground_truth/
+models/
+sigl_data/
+sigl_mal/
+training_data/
+DONT_DELETE.txt
