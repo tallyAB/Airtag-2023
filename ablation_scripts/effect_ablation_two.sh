@@ -15,25 +15,25 @@ done
 nohup python create_ablation_sets.py --browser & wait
 
 # Create new vocab from created data above
-nohup python ../create_vocab.py  \
+nohup python ../create_vocab_atlas.py  \
  -path /root/AirTag/training_data/AblationTwo/training_preprocessed_logs_S1-CVE-2015-5122_windows \
- -t_name /root/AirTag/training_data/AblationTwo/train_training_preprocessed_logs_S1-CVE-2015-5122_windows \
- -v_name /root/AirTag/training_data/AblationTwo/vocab_training_preprocessed_logs_S1-CVE-2015-5122_windows & 
+ -t_name train_training_preprocessed_logs_S1-CVE-2015-5122_windows \
+ -v_name vocab_training_preprocessed_logs_S1-CVE-2015-5122_windows & 
 
-nohup python ../create_vocab.py  \
+nohup python ../create_vocab_atlas.py  \
  -path /root/AirTag/training_data/AblationTwo/training_preprocessed_logs_S2-CVE-2015-3105_windows \
- -t_name /root/AirTag/training_data/AblationTwo/train_training_preprocessed_logs_S2-CVE-2015-3105_windows \
- -v_name /root/AirTag/training_data/AblationTwo/vocab_training_preprocessed_logs_S2-CVE-2015-3105_windows &
+ -t_name train_training_preprocessed_logs_S2-CVE-2015-3105_windows \
+ -v_name vocab_training_preprocessed_logs_S2-CVE-2015-3105_windows &
 
-nohup python ../create_vocab.py  \
+nohup python ../create_vocab_atlas.py  \
  -path /root/AirTag/training_data/AblationTwo/training_preprocessed_logs_S3-CVE-2017-11882_windows \
- -t_name /root/AirTag/training_data/AblationTwo/train_training_preprocessed_logs_S3-CVE-2017-11882_windows \
- -v_name /root/AirTag/training_data/AblationTwo/vocab_training_preprocessed_logs_S3-CVE-2017-11882_windows &
+ -t_name train_training_preprocessed_logs_S3-CVE-2017-11882_windows \
+ -v_name vocab_training_preprocessed_logs_S3-CVE-2017-11882_windows &
 
-nohup python ../create_vocab.py  \
+nohup python ../create_vocab_atlas.py  \
  -path /root/AirTag/training_data/AblationTwo/training_preprocessed_logs_S4-CVE-2017-0199_windows_py \
- -t_name /root/AirTag/training_data/AblationTwo/train_training_preprocessed_logs_S4-CVE-2017-0199_windows_py \
- -v_name /root/AirTag/training_data/AblationTwo/vocab_training_preprocessed_logs_S4-CVE-2017-0199_windows_py &
+ -t_name train_training_preprocessed_logs_S4-CVE-2017-0199_windows_py \
+ -v_name vocab_training_preprocessed_logs_S4-CVE-2017-0199_windows_py &
 
 wait
 

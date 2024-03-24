@@ -40,10 +40,10 @@ for item in pp_files+train_files+benign_files:
         lines = original_file.readlines()
         for line in lines:
             if ablOne:
-                if line.strip().endswith('LA-') or line.strip().endswith('LA+'):
+                if line.strip().endswith('LA-') or line.strip().endswith('LA+') or line.strip().endswith('LA'):
                     filtered_file.write(line)
             else: #AblationTwo
-                if line.strip().endswith('LA-') or line.strip().endswith('LA+') or line.strip().endswith('LD-') or line.strip().endswith('LD+'):
+                if line.strip().endswith('LA-') or line.strip().endswith('LA+') or line.strip().endswith('LD-') or line.strip().endswith('LD+') or line.strip().endswith('LD'):
                     filtered_file.write(line)
                 
 # Test files
@@ -57,18 +57,18 @@ for j,test_file in enumerate(test_files):
         lines = original_file.readlines()
         for i, line in enumerate(lines):
             if ablOne:
-                if line.strip().endswith('LA-') or line.strip().endswith('LA+'):
+                if line.strip().endswith('LA') or line.strip().endswith('LA+'):
                     filtered_file.write(line)
                 else:
                     indices_removed.append(i)
             else: #AblationTwo
-                if line.strip().endswith('LA-') or line.strip().endswith('LA+') or line.strip().endswith('LD-') or line.strip().endswith('LD+'):
+                if line.strip().endswith('LA') or line.strip().endswith('LA+') or line.strip().endswith('LD') or line.strip().endswith('LD+'):
                     filtered_file.write(line)
                 else:
                     indices_removed.append(i)
 
     # Load gt data
-    gt_indices = np.load('/root/Airtag/ground_truth/S'+str(j+1)+'_number_.npy')
+    gt_indices = np.load('/root/AirTag/ground_truth/S'+str(j+1)+'_number_.npy')
     gt_indices = list(set(gt_indices))
     gt_indices = [int(x) for x in gt_indices]
     gt_indices.sort()
@@ -91,4 +91,4 @@ for j,test_file in enumerate(test_files):
         updated_indices.append(index-red_dict[index])    
 
     # Write updated indices to the correct gt folder
-    np.save('/root/Airtag/ground_truth/' + suffix +'S'+str(j+1)+'_number_.npy',updated_indices)
+    np.save('/root/AirTag/ground_truth/' + suffix +'S'+str(j+1)+'_number_.npy',updated_indices)
