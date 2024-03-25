@@ -24,7 +24,7 @@ suffix=args.suffix+"/" # Exp comes here via args
 
 path=['train_preprocessed_teamviewer']
 f=open("/root/AirTag/embedding_data/"+suffix+"benign_teamviewer.json")
-number_list=['teamviewer_number_.npy']
+number_list=['teamviewer_number.npy']
   
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] =str(args.gpu)

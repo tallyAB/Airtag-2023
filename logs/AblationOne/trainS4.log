@@ -1,13 +1,13 @@
 INFO:tensorflow:*** Input Files ***
 INFO:tensorflow:  ../training_data/AblationOne/S4.tfrecord
-WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f81ae7c0a60>) includes params argument, but params are not passed to Estimator.
-INFO:tensorflow:Using config: {'_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None), '_save_checkpoints_steps': 1000, '_session_config': allow_soft_placement: true
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f09e7ab9a60>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_tf_random_seed': None, '_keep_checkpoint_max': 5, '_save_summary_steps': 100, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f09b7095fd0>, '_num_ps_replicas': 0, '_train_distribute': None, '_log_step_count_steps': None, '_evaluation_master': '', '_model_dir': '../models/AblationOne/S4', '_save_checkpoints_secs': None, '_cluster': None, '_protocol': None, '_task_id': 0, '_is_chief': True, '_task_type': 'worker', '_session_config': allow_soft_placement: true
 graph_options {
   rewrite_options {
     meta_optimizer_iterations: ONE
   }
 }
-, '_model_dir': '../models/AblationOne/S4', '_task_id': 0, '_eval_distribute': None, '_log_step_count_steps': None, '_protocol': None, '_num_worker_replicas': 1, '_evaluation_master': '', '_device_fn': None, '_save_summary_steps': 100, '_num_ps_replicas': 0, '_cluster': None, '_is_chief': True, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f817dd2bf28>, '_train_distribute': None, '_master': '', '_experimental_distribute': None, '_tf_random_seed': None, '_service': None, '_keep_checkpoint_every_n_hours': 10000, '_keep_checkpoint_max': 5, '_task_type': 'worker', '_global_id_in_cluster': 0, '_save_checkpoints_secs': None}
+, '_master': '', '_experimental_distribute': None, '_num_worker_replicas': 1, '_service': None, '_save_checkpoints_steps': 1000, '_global_id_in_cluster': 0, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None), '_keep_checkpoint_every_n_hours': 10000, '_eval_distribute': None, '_device_fn': None}
 INFO:tensorflow:_TPUContext: eval_on_tpu True
 WARNING:tensorflow:eval_on_tpu ignored because use_tpu is False.
 INFO:tensorflow:***** Running training *****
@@ -136,228 +136,228 @@ INFO:tensorflow:  name = cls/seq_relationship/output_bias:0, shape = (2,), *INIT
 INFO:tensorflow:Done calling model_fn.
 INFO:tensorflow:Create CheckpointSaverHook.
 INFO:tensorflow:Graph was finalized.
-2024-03-24 00:09:28.442423: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
-2024-03-24 00:09:28.720753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1411] Found device 0 with properties: 
+2024-03-24 15:24:40.804931: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2024-03-24 15:24:41.035473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1411] Found device 0 with properties: 
 name: Tesla V100-PCIE-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.38
 pciBusID: 0000:3b:00.0
 totalMemory: 31.73GiB freeMemory: 31.43GiB
-2024-03-24 00:09:28.720871: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
-2024-03-24 00:09:29.372315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
-2024-03-24 00:09:29.372676: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
-2024-03-24 00:09:29.372851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
-2024-03-24 00:09:29.373272: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30495 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-32GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
+2024-03-24 15:24:41.035611: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2024-03-24 15:24:41.714064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-03-24 15:24:41.714197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2024-03-24 15:24:41.714226: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2024-03-24 15:24:41.714498: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30495 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-32GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
 INFO:tensorflow:Running local_init_op.
 INFO:tensorflow:Done running local_init_op.
 INFO:tensorflow:Saving checkpoints for 0 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 10.3548
-INFO:tensorflow:examples/sec: 41.4193
-INFO:tensorflow:global_step/sec: 26.7
-INFO:tensorflow:examples/sec: 106.8
-INFO:tensorflow:global_step/sec: 27.039
-INFO:tensorflow:examples/sec: 108.156
-INFO:tensorflow:global_step/sec: 26.7785
-INFO:tensorflow:examples/sec: 107.114
-INFO:tensorflow:global_step/sec: 26.96
-INFO:tensorflow:examples/sec: 107.84
-INFO:tensorflow:global_step/sec: 27.1729
-INFO:tensorflow:examples/sec: 108.692
-INFO:tensorflow:global_step/sec: 27.2024
-INFO:tensorflow:examples/sec: 108.81
-INFO:tensorflow:global_step/sec: 27.5575
-INFO:tensorflow:examples/sec: 110.23
-INFO:tensorflow:global_step/sec: 27.0142
-INFO:tensorflow:examples/sec: 108.057
+INFO:tensorflow:global_step/sec: 10.4878
+INFO:tensorflow:examples/sec: 41.9513
+INFO:tensorflow:global_step/sec: 27.0514
+INFO:tensorflow:examples/sec: 108.205
+INFO:tensorflow:global_step/sec: 26.7447
+INFO:tensorflow:examples/sec: 106.979
+INFO:tensorflow:global_step/sec: 27.3243
+INFO:tensorflow:examples/sec: 109.297
+INFO:tensorflow:global_step/sec: 27.0618
+INFO:tensorflow:examples/sec: 108.247
+INFO:tensorflow:global_step/sec: 27.8288
+INFO:tensorflow:examples/sec: 111.315
+INFO:tensorflow:global_step/sec: 26.9106
+INFO:tensorflow:examples/sec: 107.642
+INFO:tensorflow:global_step/sec: 27.1607
+INFO:tensorflow:examples/sec: 108.643
+INFO:tensorflow:global_step/sec: 27.1899
+INFO:tensorflow:examples/sec: 108.76
 INFO:tensorflow:Saving checkpoints for 1000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 17.7101
-INFO:tensorflow:examples/sec: 70.8404
-INFO:tensorflow:global_step/sec: 27.7174
-INFO:tensorflow:examples/sec: 110.87
-INFO:tensorflow:global_step/sec: 26.2656
-INFO:tensorflow:examples/sec: 105.062
-INFO:tensorflow:global_step/sec: 26.7249
-INFO:tensorflow:examples/sec: 106.9
-INFO:tensorflow:global_step/sec: 26.5806
-INFO:tensorflow:examples/sec: 106.322
-INFO:tensorflow:global_step/sec: 27.2474
-INFO:tensorflow:examples/sec: 108.989
-INFO:tensorflow:global_step/sec: 26.6895
-INFO:tensorflow:examples/sec: 106.758
-INFO:tensorflow:global_step/sec: 27.3454
-INFO:tensorflow:examples/sec: 109.382
-INFO:tensorflow:global_step/sec: 27.1862
-INFO:tensorflow:examples/sec: 108.745
-INFO:tensorflow:global_step/sec: 27.2772
-INFO:tensorflow:examples/sec: 109.109
+INFO:tensorflow:global_step/sec: 18.4483
+INFO:tensorflow:examples/sec: 73.7933
+INFO:tensorflow:global_step/sec: 27.1552
+INFO:tensorflow:examples/sec: 108.621
+INFO:tensorflow:global_step/sec: 26.6494
+INFO:tensorflow:examples/sec: 106.598
+INFO:tensorflow:global_step/sec: 26.9272
+INFO:tensorflow:examples/sec: 107.709
+INFO:tensorflow:global_step/sec: 26.5239
+INFO:tensorflow:examples/sec: 106.096
+INFO:tensorflow:global_step/sec: 26.3716
+INFO:tensorflow:examples/sec: 105.486
+INFO:tensorflow:global_step/sec: 25.8671
+INFO:tensorflow:examples/sec: 103.469
+INFO:tensorflow:global_step/sec: 26.9552
+INFO:tensorflow:examples/sec: 107.821
+INFO:tensorflow:global_step/sec: 27.6898
+INFO:tensorflow:examples/sec: 110.759
+INFO:tensorflow:global_step/sec: 27.4013
+INFO:tensorflow:examples/sec: 109.605
 INFO:tensorflow:Saving checkpoints for 2000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 18.2445
-INFO:tensorflow:examples/sec: 72.978
-INFO:tensorflow:global_step/sec: 26.821
-INFO:tensorflow:examples/sec: 107.284
-INFO:tensorflow:global_step/sec: 26.8231
-INFO:tensorflow:examples/sec: 107.293
-INFO:tensorflow:global_step/sec: 27.2697
-INFO:tensorflow:examples/sec: 109.079
-INFO:tensorflow:global_step/sec: 26.2706
-INFO:tensorflow:examples/sec: 105.082
-INFO:tensorflow:global_step/sec: 27.1225
-INFO:tensorflow:examples/sec: 108.49
-INFO:tensorflow:global_step/sec: 26.841
-INFO:tensorflow:examples/sec: 107.364
-INFO:tensorflow:global_step/sec: 26.7129
-INFO:tensorflow:examples/sec: 106.852
-INFO:tensorflow:global_step/sec: 26.5773
-INFO:tensorflow:examples/sec: 106.309
-INFO:tensorflow:global_step/sec: 27.5339
-INFO:tensorflow:examples/sec: 110.136
+INFO:tensorflow:global_step/sec: 18.5742
+INFO:tensorflow:examples/sec: 74.2969
+INFO:tensorflow:global_step/sec: 27.229
+INFO:tensorflow:examples/sec: 108.916
+INFO:tensorflow:global_step/sec: 26.8811
+INFO:tensorflow:examples/sec: 107.524
+INFO:tensorflow:global_step/sec: 27.2657
+INFO:tensorflow:examples/sec: 109.063
+INFO:tensorflow:global_step/sec: 26.9819
+INFO:tensorflow:examples/sec: 107.927
+INFO:tensorflow:global_step/sec: 27.2371
+INFO:tensorflow:examples/sec: 108.948
+INFO:tensorflow:global_step/sec: 25.9044
+INFO:tensorflow:examples/sec: 103.618
+INFO:tensorflow:global_step/sec: 26.289
+INFO:tensorflow:examples/sec: 105.156
+INFO:tensorflow:global_step/sec: 26.7439
+INFO:tensorflow:examples/sec: 106.975
+INFO:tensorflow:global_step/sec: 26.7019
+INFO:tensorflow:examples/sec: 106.808
 INFO:tensorflow:Saving checkpoints for 3000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 18.3604
-INFO:tensorflow:examples/sec: 73.4415
-INFO:tensorflow:global_step/sec: 26.9917
-INFO:tensorflow:examples/sec: 107.967
-INFO:tensorflow:global_step/sec: 26.8761
-INFO:tensorflow:examples/sec: 107.504
-INFO:tensorflow:global_step/sec: 27.207
-INFO:tensorflow:examples/sec: 108.828
-INFO:tensorflow:global_step/sec: 27.0774
-INFO:tensorflow:examples/sec: 108.309
-INFO:tensorflow:global_step/sec: 25.8372
-INFO:tensorflow:examples/sec: 103.349
-INFO:tensorflow:global_step/sec: 27.5846
-INFO:tensorflow:examples/sec: 110.339
-INFO:tensorflow:global_step/sec: 27.4271
-INFO:tensorflow:examples/sec: 109.708
-INFO:tensorflow:global_step/sec: 26.9746
-INFO:tensorflow:examples/sec: 107.898
-INFO:tensorflow:global_step/sec: 26.875
-INFO:tensorflow:examples/sec: 107.5
+INFO:tensorflow:global_step/sec: 18.621
+INFO:tensorflow:examples/sec: 74.4838
+INFO:tensorflow:global_step/sec: 26.7944
+INFO:tensorflow:examples/sec: 107.178
+INFO:tensorflow:global_step/sec: 26.0645
+INFO:tensorflow:examples/sec: 104.258
+INFO:tensorflow:global_step/sec: 26.1665
+INFO:tensorflow:examples/sec: 104.666
+INFO:tensorflow:global_step/sec: 26.38
+INFO:tensorflow:examples/sec: 105.52
+INFO:tensorflow:global_step/sec: 27.0964
+INFO:tensorflow:examples/sec: 108.386
+INFO:tensorflow:global_step/sec: 27.7593
+INFO:tensorflow:examples/sec: 111.037
+INFO:tensorflow:global_step/sec: 27.5009
+INFO:tensorflow:examples/sec: 110.004
+INFO:tensorflow:global_step/sec: 26.3892
+INFO:tensorflow:examples/sec: 105.557
+INFO:tensorflow:global_step/sec: 26.2835
+INFO:tensorflow:examples/sec: 105.134
 INFO:tensorflow:Saving checkpoints for 4000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 18.215
-INFO:tensorflow:examples/sec: 72.8601
-INFO:tensorflow:global_step/sec: 27.8503
-INFO:tensorflow:examples/sec: 111.401
-INFO:tensorflow:global_step/sec: 27.258
-INFO:tensorflow:examples/sec: 109.032
-INFO:tensorflow:global_step/sec: 26.9972
-INFO:tensorflow:examples/sec: 107.989
-INFO:tensorflow:global_step/sec: 26.9935
-INFO:tensorflow:examples/sec: 107.974
-INFO:tensorflow:global_step/sec: 27.1538
-INFO:tensorflow:examples/sec: 108.615
-INFO:tensorflow:global_step/sec: 26.9582
-INFO:tensorflow:examples/sec: 107.833
-INFO:tensorflow:global_step/sec: 27.6656
-INFO:tensorflow:examples/sec: 110.663
-INFO:tensorflow:global_step/sec: 26.8549
-INFO:tensorflow:examples/sec: 107.42
-INFO:tensorflow:global_step/sec: 27.5311
-INFO:tensorflow:examples/sec: 110.124
+INFO:tensorflow:global_step/sec: 18.8093
+INFO:tensorflow:examples/sec: 75.237
+INFO:tensorflow:global_step/sec: 27.6059
+INFO:tensorflow:examples/sec: 110.424
+INFO:tensorflow:global_step/sec: 26.3475
+INFO:tensorflow:examples/sec: 105.39
+INFO:tensorflow:global_step/sec: 27.2467
+INFO:tensorflow:examples/sec: 108.987
+INFO:tensorflow:global_step/sec: 26.583
+INFO:tensorflow:examples/sec: 106.332
+INFO:tensorflow:global_step/sec: 26.8255
+INFO:tensorflow:examples/sec: 107.302
+INFO:tensorflow:global_step/sec: 26.5873
+INFO:tensorflow:examples/sec: 106.349
+INFO:tensorflow:global_step/sec: 26.1996
+INFO:tensorflow:examples/sec: 104.798
+INFO:tensorflow:global_step/sec: 26.2889
+INFO:tensorflow:examples/sec: 105.156
+INFO:tensorflow:global_step/sec: 26.9094
+INFO:tensorflow:examples/sec: 107.637
 INFO:tensorflow:Saving checkpoints for 5000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 17.2901
-INFO:tensorflow:examples/sec: 69.1606
-INFO:tensorflow:global_step/sec: 27.2184
-INFO:tensorflow:examples/sec: 108.874
-INFO:tensorflow:global_step/sec: 27.1973
-INFO:tensorflow:examples/sec: 108.789
-INFO:tensorflow:global_step/sec: 26.8611
-INFO:tensorflow:examples/sec: 107.444
-INFO:tensorflow:global_step/sec: 26.9167
-INFO:tensorflow:examples/sec: 107.667
-INFO:tensorflow:global_step/sec: 27.5387
-INFO:tensorflow:examples/sec: 110.155
-INFO:tensorflow:global_step/sec: 27.5101
-INFO:tensorflow:examples/sec: 110.04
-INFO:tensorflow:global_step/sec: 26.5711
-INFO:tensorflow:examples/sec: 106.285
-INFO:tensorflow:global_step/sec: 27.6407
-INFO:tensorflow:examples/sec: 110.563
-INFO:tensorflow:global_step/sec: 26.178
-INFO:tensorflow:examples/sec: 104.712
+INFO:tensorflow:global_step/sec: 18.4689
+INFO:tensorflow:examples/sec: 73.8757
+INFO:tensorflow:global_step/sec: 27.3349
+INFO:tensorflow:examples/sec: 109.34
+INFO:tensorflow:global_step/sec: 27.1485
+INFO:tensorflow:examples/sec: 108.594
+INFO:tensorflow:global_step/sec: 27.0668
+INFO:tensorflow:examples/sec: 108.267
+INFO:tensorflow:global_step/sec: 26.8365
+INFO:tensorflow:examples/sec: 107.346
+INFO:tensorflow:global_step/sec: 26.0655
+INFO:tensorflow:examples/sec: 104.262
+INFO:tensorflow:global_step/sec: 26.8029
+INFO:tensorflow:examples/sec: 107.212
+INFO:tensorflow:global_step/sec: 26.7784
+INFO:tensorflow:examples/sec: 107.114
+INFO:tensorflow:global_step/sec: 26.5284
+INFO:tensorflow:examples/sec: 106.114
+INFO:tensorflow:global_step/sec: 27.2672
+INFO:tensorflow:examples/sec: 109.069
 INFO:tensorflow:Saving checkpoints for 6000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 17.9414
-INFO:tensorflow:examples/sec: 71.7654
-INFO:tensorflow:global_step/sec: 27.0097
-INFO:tensorflow:examples/sec: 108.039
-INFO:tensorflow:global_step/sec: 26.3041
-INFO:tensorflow:examples/sec: 105.216
-INFO:tensorflow:global_step/sec: 27.182
-INFO:tensorflow:examples/sec: 108.728
-INFO:tensorflow:global_step/sec: 27.1846
-INFO:tensorflow:examples/sec: 108.739
-INFO:tensorflow:global_step/sec: 26.4071
-INFO:tensorflow:examples/sec: 105.628
-INFO:tensorflow:global_step/sec: 27.5582
-INFO:tensorflow:examples/sec: 110.233
-INFO:tensorflow:global_step/sec: 27.4976
-INFO:tensorflow:examples/sec: 109.99
-INFO:tensorflow:global_step/sec: 27.0524
-INFO:tensorflow:examples/sec: 108.21
-INFO:tensorflow:global_step/sec: 27.163
-INFO:tensorflow:examples/sec: 108.652
+INFO:tensorflow:global_step/sec: 17.9614
+INFO:tensorflow:examples/sec: 71.8456
+INFO:tensorflow:global_step/sec: 25.8512
+INFO:tensorflow:examples/sec: 103.405
+INFO:tensorflow:global_step/sec: 27.3481
+INFO:tensorflow:examples/sec: 109.392
+INFO:tensorflow:global_step/sec: 26.9925
+INFO:tensorflow:examples/sec: 107.97
+INFO:tensorflow:global_step/sec: 27.8166
+INFO:tensorflow:examples/sec: 111.266
+INFO:tensorflow:global_step/sec: 26.6438
+INFO:tensorflow:examples/sec: 106.575
+INFO:tensorflow:global_step/sec: 26.7232
+INFO:tensorflow:examples/sec: 106.893
+INFO:tensorflow:global_step/sec: 26.5997
+INFO:tensorflow:examples/sec: 106.399
+INFO:tensorflow:global_step/sec: 27.1886
+INFO:tensorflow:examples/sec: 108.754
+INFO:tensorflow:global_step/sec: 27.292
+INFO:tensorflow:examples/sec: 109.168
 INFO:tensorflow:Saving checkpoints for 7000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 18.3666
-INFO:tensorflow:examples/sec: 73.4664
-INFO:tensorflow:global_step/sec: 26.9059
-INFO:tensorflow:examples/sec: 107.624
-INFO:tensorflow:global_step/sec: 26.9169
-INFO:tensorflow:examples/sec: 107.668
-INFO:tensorflow:global_step/sec: 26.3949
-INFO:tensorflow:examples/sec: 105.58
-INFO:tensorflow:global_step/sec: 27.6007
-INFO:tensorflow:examples/sec: 110.403
-INFO:tensorflow:global_step/sec: 26.5986
-INFO:tensorflow:examples/sec: 106.394
-INFO:tensorflow:global_step/sec: 26.9586
-INFO:tensorflow:examples/sec: 107.834
-INFO:tensorflow:global_step/sec: 26.4068
-INFO:tensorflow:examples/sec: 105.627
-INFO:tensorflow:global_step/sec: 27.4552
-INFO:tensorflow:examples/sec: 109.821
-INFO:tensorflow:global_step/sec: 26.4269
-INFO:tensorflow:examples/sec: 105.708
+INFO:tensorflow:global_step/sec: 17.3841
+INFO:tensorflow:examples/sec: 69.5365
+INFO:tensorflow:global_step/sec: 26.5063
+INFO:tensorflow:examples/sec: 106.025
+INFO:tensorflow:global_step/sec: 26.4533
+INFO:tensorflow:examples/sec: 105.813
+INFO:tensorflow:global_step/sec: 27.0536
+INFO:tensorflow:examples/sec: 108.214
+INFO:tensorflow:global_step/sec: 26.5734
+INFO:tensorflow:examples/sec: 106.294
+INFO:tensorflow:global_step/sec: 26.8746
+INFO:tensorflow:examples/sec: 107.498
+INFO:tensorflow:global_step/sec: 27.1764
+INFO:tensorflow:examples/sec: 108.705
+INFO:tensorflow:global_step/sec: 27.1913
+INFO:tensorflow:examples/sec: 108.765
+INFO:tensorflow:global_step/sec: 26.74
+INFO:tensorflow:examples/sec: 106.96
+INFO:tensorflow:global_step/sec: 26.8394
+INFO:tensorflow:examples/sec: 107.357
 INFO:tensorflow:Saving checkpoints for 8000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 16.8967
-INFO:tensorflow:examples/sec: 67.5867
-INFO:tensorflow:global_step/sec: 27.179
-INFO:tensorflow:examples/sec: 108.716
-INFO:tensorflow:global_step/sec: 27.477
-INFO:tensorflow:examples/sec: 109.908
-INFO:tensorflow:global_step/sec: 27.0842
-INFO:tensorflow:examples/sec: 108.337
-INFO:tensorflow:global_step/sec: 27.4653
-INFO:tensorflow:examples/sec: 109.861
-INFO:tensorflow:global_step/sec: 26.6062
-INFO:tensorflow:examples/sec: 106.425
-INFO:tensorflow:global_step/sec: 27.4973
-INFO:tensorflow:examples/sec: 109.989
-INFO:tensorflow:global_step/sec: 27.1134
-INFO:tensorflow:examples/sec: 108.454
-INFO:tensorflow:global_step/sec: 27.0735
-INFO:tensorflow:examples/sec: 108.294
-INFO:tensorflow:global_step/sec: 27.6195
-INFO:tensorflow:examples/sec: 110.478
+INFO:tensorflow:global_step/sec: 18.0418
+INFO:tensorflow:examples/sec: 72.1672
+INFO:tensorflow:global_step/sec: 26.6054
+INFO:tensorflow:examples/sec: 106.422
+INFO:tensorflow:global_step/sec: 26.675
+INFO:tensorflow:examples/sec: 106.7
+INFO:tensorflow:global_step/sec: 26.7954
+INFO:tensorflow:examples/sec: 107.182
+INFO:tensorflow:global_step/sec: 26.5001
+INFO:tensorflow:examples/sec: 106
+INFO:tensorflow:global_step/sec: 26.8673
+INFO:tensorflow:examples/sec: 107.469
+INFO:tensorflow:global_step/sec: 26.8323
+INFO:tensorflow:examples/sec: 107.329
+INFO:tensorflow:global_step/sec: 26.4173
+INFO:tensorflow:examples/sec: 105.669
+INFO:tensorflow:global_step/sec: 26.8102
+INFO:tensorflow:examples/sec: 107.241
+INFO:tensorflow:global_step/sec: 27.3307
+INFO:tensorflow:examples/sec: 109.323
 INFO:tensorflow:Saving checkpoints for 9000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:global_step/sec: 18.5167
-INFO:tensorflow:examples/sec: 74.0669
-INFO:tensorflow:global_step/sec: 27.1951
-INFO:tensorflow:examples/sec: 108.78
-INFO:tensorflow:global_step/sec: 27.5283
-INFO:tensorflow:examples/sec: 110.113
-INFO:tensorflow:global_step/sec: 26.5943
-INFO:tensorflow:examples/sec: 106.377
-INFO:tensorflow:global_step/sec: 27.0654
-INFO:tensorflow:examples/sec: 108.261
-INFO:tensorflow:global_step/sec: 27.5492
-INFO:tensorflow:examples/sec: 110.197
-INFO:tensorflow:global_step/sec: 27.4951
-INFO:tensorflow:examples/sec: 109.981
-INFO:tensorflow:global_step/sec: 28.0116
-INFO:tensorflow:examples/sec: 112.046
-INFO:tensorflow:global_step/sec: 27.204
-INFO:tensorflow:examples/sec: 108.816
-INFO:tensorflow:global_step/sec: 27.2595
-INFO:tensorflow:examples/sec: 109.038
+INFO:tensorflow:global_step/sec: 17.6362
+INFO:tensorflow:examples/sec: 70.545
+INFO:tensorflow:global_step/sec: 27.5035
+INFO:tensorflow:examples/sec: 110.014
+INFO:tensorflow:global_step/sec: 27.7568
+INFO:tensorflow:examples/sec: 111.027
+INFO:tensorflow:global_step/sec: 27.4418
+INFO:tensorflow:examples/sec: 109.767
+INFO:tensorflow:global_step/sec: 27.5329
+INFO:tensorflow:examples/sec: 110.132
+INFO:tensorflow:global_step/sec: 26.7363
+INFO:tensorflow:examples/sec: 106.945
+INFO:tensorflow:global_step/sec: 27.9416
+INFO:tensorflow:examples/sec: 111.766
+INFO:tensorflow:global_step/sec: 26.6192
+INFO:tensorflow:examples/sec: 106.477
+INFO:tensorflow:global_step/sec: 26.2313
+INFO:tensorflow:examples/sec: 104.925
+INFO:tensorflow:global_step/sec: 27.6178
+INFO:tensorflow:examples/sec: 110.471
 INFO:tensorflow:Saving checkpoints for 10000 into ../models/AblationOne/S4/model.ckpt.
-INFO:tensorflow:Loss for final step: 2.21343.
+INFO:tensorflow:Loss for final step: 0.7972765.
 INFO:tensorflow:training_loop marked as finished
 INFO:tensorflow:***** Running evaluation *****
 INFO:tensorflow:  Batch size = 8
@@ -483,13 +483,13 @@ INFO:tensorflow:  name = cls/predictions/output_bias:0, shape = (30522,), *INIT_
 INFO:tensorflow:  name = cls/seq_relationship/output_weights:0, shape = (2, 128), *INIT_FROM_CKPT*
 INFO:tensorflow:  name = cls/seq_relationship/output_bias:0, shape = (2,), *INIT_FROM_CKPT*
 INFO:tensorflow:Done calling model_fn.
-INFO:tensorflow:Starting evaluation at 2024-03-24-00:16:31
+INFO:tensorflow:Starting evaluation at 2024-03-24-15:31:43
 INFO:tensorflow:Graph was finalized.
-2024-03-24 00:16:32.645342: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
-2024-03-24 00:16:32.645470: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
-2024-03-24 00:16:32.645507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
-2024-03-24 00:16:32.645525: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
-2024-03-24 00:16:32.645681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30495 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-32GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
+2024-03-24 15:31:44.428679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2024-03-24 15:31:44.428795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-03-24 15:31:44.428835: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2024-03-24 15:31:44.428858: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2024-03-24 15:31:44.429023: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30495 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-32GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
 INFO:tensorflow:Restoring parameters from ../models/AblationOne/S4/model.ckpt-10000
 INFO:tensorflow:Running local_init_op.
 INFO:tensorflow:Done running local_init_op.
@@ -503,14 +503,14 @@ INFO:tensorflow:Evaluation [70/100]
 INFO:tensorflow:Evaluation [80/100]
 INFO:tensorflow:Evaluation [90/100]
 INFO:tensorflow:Evaluation [100/100]
-INFO:tensorflow:Finished evaluation at 2024-03-24-00:16:35
-INFO:tensorflow:Saving dict for global step 10000: global_step = 10000, loss = 1.0863216, masked_lm_accuracy = 0.858156, masked_lm_loss = 0.7993392, next_sentence_accuracy = 0.87125, next_sentence_loss = 0.2866024
+INFO:tensorflow:Finished evaluation at 2024-03-24-15:31:47
+INFO:tensorflow:Saving dict for global step 10000: global_step = 10000, loss = 1.1113976, masked_lm_accuracy = 0.85055727, masked_lm_loss = 0.80312437, next_sentence_accuracy = 0.86, next_sentence_loss = 0.30754915
 INFO:tensorflow:Saving 'checkpoint_path' summary for global step 10000: ../models/AblationOne/S4/model.ckpt-10000
 INFO:tensorflow:evaluation_loop marked as finished
 INFO:tensorflow:***** Eval results *****
 INFO:tensorflow:  global_step = 10000
-INFO:tensorflow:  loss = 1.0863216
-INFO:tensorflow:  masked_lm_accuracy = 0.858156
-INFO:tensorflow:  masked_lm_loss = 0.7993392
-INFO:tensorflow:  next_sentence_accuracy = 0.87125
-INFO:tensorflow:  next_sentence_loss = 0.2866024
+INFO:tensorflow:  loss = 1.1113976
+INFO:tensorflow:  masked_lm_accuracy = 0.85055727
+INFO:tensorflow:  masked_lm_loss = 0.80312437
+INFO:tensorflow:  next_sentence_accuracy = 0.86
+INFO:tensorflow:  next_sentence_loss = 0.30754915

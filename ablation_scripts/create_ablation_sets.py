@@ -43,7 +43,7 @@ for item in pp_files+train_files+benign_files:
                 if line.strip().endswith('LA-') or line.strip().endswith('LA+') or line.strip().endswith('LA'):
                     filtered_file.write(line)
             else: #AblationTwo
-                if line.strip().endswith('LA-') or line.strip().endswith('LA+') or line.strip().endswith('LD-') or line.strip().endswith('LD+') or line.strip().endswith('LD'):
+                if line.strip().endswith('LA-') or line.strip().endswith('LA+') or line.strip().endswith('LA') or line.strip().endswith('LD-') or line.strip().endswith('LD+') or line.strip().endswith('LD'):
                     filtered_file.write(line)
                 
 # Test files

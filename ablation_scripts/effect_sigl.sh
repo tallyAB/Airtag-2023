@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Cleanup working directories
-directories=("../training_data/SIGL", "../embedding_data/SIGL" "../ground_truth/SIGL" "../models/SIGL" "../logs/SIGL")
+directories=("../training_data/SIGL" "../embedding_data/SIGL" "../ground_truth/SIGL" "../models/SIGL" "../logs/SIGL")
 for dir in "${directories[@]}"; do
     if [ -d "$dir" ]; then
         rm -rf "$dir"
@@ -86,7 +86,6 @@ nohup python preprocess_custom.py \
  /root/AirTag/sigl_data/skype-6.log.interpret.log \
  -o_dir /root/AirTag/tmpTrainDir &
 
-
 # Process interpreted test data
 nohup python preprocess_custom.py \
  -files \
@@ -113,7 +112,7 @@ nohup python tag_positive_logs.py \
  -file /root/AirTag/tmpTestDir/teamviewer-mal.interpret.log \
  -pattern 192.168.33.12 &
 
-# wait
+wait
 
 # Create vocab, train file
 nohup python ../create_vocab_atlas.py  \
@@ -121,7 +120,7 @@ nohup python ../create_vocab_atlas.py  \
  -t_name train_teamviewer \
  -v_name vocab_sigl_teamviewer.txt &
 
-# # Create test file, dont need its vocab
+# Create test file, dont need its vocab
 nohup python ../create_vocab_atlas.py  \
  -path /root/AirTag/tmpTestDir/teamviewer-mal.interpret.log \
  -t_name test_teamviewer \
@@ -161,7 +160,7 @@ wait
 nohup python ../create_pretraining_data.py  \
  --input_file=../training_data/SIGL/train_teamviewer \
  --output_file=../training_data/SIGL/teamviewer.tfrecord \
- --vocab_file=../training_data/SIGL/vocab_single_teamviewer.txt \
+ --vocab_file=../training_data/SIGL/vocab_sigl_teamviewer.txt \
  --do_lower_case=True \
  --max_seq_length=32  \
  --max_predictions_per_seq=20  \
@@ -193,7 +192,7 @@ wait
   nohup python -u ../extract_multi_process2.py \
   --input_file=../training_data/SIGL/benign_teamviewer \
   --output_file=../embedding_data/SIGL/benign_teamviewer.json  \
-  --vocab_file=../training_data/SIGL/vocab_single_teamviewer.txt \
+  --vocab_file=../training_data/SIGL/vocab_sigl_teamviewer.txt \
   --bert_config_file=../uncased_L-6_H-128_A-2/bert_config.json \
   --init_checkpoint=../models/SIGL/teamviewer/model.ckpt-10000 \
   --layers=-1  \
@@ -206,7 +205,7 @@ wait
   nohup python -u ../extract_multi_process2.py \
   --input_file=../training_data/SIGL/test_teamviewer \
   --output_file=../embedding_data/SIGL/test_teamviewer.json  \
-  --vocab_file=../training_data/SIGL/vocab_single_teamviewer.txt.txt \
+  --vocab_file=../training_data/SIGL/vocab_sigl_teamviewer.txt \
   --bert_config_file=../uncased_L-6_H-128_A-2/bert_config.json \
   --init_checkpoint=../models/SIGL/teamviewer/model.ckpt-10000 \
   --layers=-1  \

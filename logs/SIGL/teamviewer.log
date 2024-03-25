@@ -1,0 +1,45 @@
+start-------
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+45000
+50000
+55000
+(57000, 128)
+start clustering---------
+benign accuracy
+0.8479473684210527
+test1
+9
+2
+17
+2144
+0.8181818181818182
+0.992133271633503
+0.007866728366496992
+0.18181818181818182
+test1
+Threshold: 0.3
+
+True Positives: 9
+False Negatives: 2
+False Positives: 17
+True Negatives: 2144
+
+Accuracy
+0.9912523020257827
+
+True Positive Rate
+0.8181818181818182
+True Negative Rate
+0.992133271633503
+False Positive Rate
+0.007866728366496992
+False Negative Rate
+0.18181818181818182

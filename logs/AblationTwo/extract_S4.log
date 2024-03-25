@@ -1,0 +1,30 @@
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f96bcafcf28>) includes params argument, but params are not passed to Estimator.
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpz69c49i8
+INFO:tensorflow:Using config: {'_save_checkpoints_secs': 600, '_num_ps_replicas': 0, '_master': '', '_model_dir': '/tmp/tmpz69c49i8', '_num_worker_replicas': 1, '_log_step_count_steps': None, '_keep_checkpoint_max': 5, '_eval_distribute': None, '_task_id': 0, '_tf_random_seed': None, '_tpu_config': TPUConfig(iterations_per_loop=2, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None), '_task_type': 'worker', '_protocol': None, '_save_checkpoints_steps': None, '_train_distribute': None, '_service': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_is_chief': True, '_global_id_in_cluster': 0, '_save_summary_steps': 100, '_device_fn': None, '_experimental_distribute': None, '_keep_checkpoint_every_n_hours': 10000, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f96bc9e4278>, '_evaluation_master': '', '_cluster': None}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+WARNING:tensorflow:eval_on_tpu ignored because use_tpu is False.
+INFO:tensorflow:Could not find trained model in model_dir: /tmp/tmpz69c49i8, running initialization to predict.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Running infer on CPU
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Graph was finalized.
+2024-03-24 19:35:13.255321: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2024-03-24 19:35:13.447919: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1411] Found device 0 with properties: 
+name: Tesla V100-PCIE-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.38
+pciBusID: 0000:3b:00.0
+totalMemory: 31.73GiB freeMemory: 31.43GiB
+2024-03-24 19:35:13.448034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0
+2024-03-24 19:35:14.119395: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-03-24 19:35:14.119509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 
+2024-03-24 19:35:14.119529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N 
+2024-03-24 19:35:14.119723: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30495 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-32GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:prediction_loop marked as finished
+INFO:tensorflow:prediction_loop marked as finished

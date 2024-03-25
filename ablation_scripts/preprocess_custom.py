@@ -418,7 +418,7 @@ def pp_audit(wf, path):
     all_lines = []
 
     # first make every log entry a single line
-    with open(log_file_path, 'r') as f:
+    with open(log_file_path, 'r', errors='ignore') as f:
         # f.next()  # skip first ----
         f.readline()
         single_lines = []
